@@ -1,0 +1,156 @@
+import { Reveal } from "@/components/Reveal/Reveal";
+import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
+import { researchArticles } from "@/app/data/research";
+
+export function ResearchSection() {
+  return (
+    <section
+      id="research"
+      style={{
+        position: "relative",
+        zIndex: 1,
+        padding: "clamp(6rem,14vw,12rem) clamp(1.5rem,8vw,8rem)",
+        maxWidth: 1100,
+        margin: "0 auto",
+      }}
+    >
+      <Reveal>
+        <SectionLabel>Research & Thinking</SectionLabel>
+      </Reveal>
+      <Reveal delay={80}>
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: "clamp(2.4rem, 5.5vw, 4.5rem)",
+            fontWeight: 300,
+            color: "#F3EFE7",
+            marginBottom: "5rem",
+            lineHeight: 1.1,
+            letterSpacing: "-0.01em",
+          }}
+        >
+          Ideas existing
+          <br />
+          <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            within systems
+          </em>
+        </h2>
+      </Reveal>
+
+      {/* Pure flowing list — no cards, no boxes */}
+      <div>
+        {researchArticles.map((article, i) => (
+          <Reveal key={article.id} delay={i * 70}>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "200px 1fr 120px",
+                gap: "3rem",
+                padding: "3rem 0",
+                borderTop: "1px solid rgba(200,139,90,0.08)",
+                transition: "border-color 0.5s ease",
+                cursor: "pointer",
+                alignItems: "start",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderTopColor = "rgba(200,139,90,0.3)";
+                const title = e.currentTarget.querySelector(".article-title");
+                if (title) title.style.color = "#C88B5A";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderTopColor = "rgba(200,139,90,0.08)";
+                const title = e.currentTarget.querySelector(".article-title");
+                if (title) title.style.color = "#F3EFE7";
+              }}
+            >
+              {/* Category + tags */}
+              <div style={{ paddingTop: "0.2rem" }}>
+                <div
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.62rem",
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "#9B5E45",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {article.category}
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.35rem",
+                  }}
+                >
+                  {article.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      style={{
+                        fontFamily: "'Inter', sans-serif",
+                        fontSize: "0.58rem",
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        color: "rgba(156,163,175,0.35)",
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Title + excerpt */}
+              <div>
+                <div
+                  className="article-title"
+                  style={{
+                    fontFamily: "'Cormorant Garamond', serif",
+                    fontSize: "clamp(1.2rem, 2vw, 1.6rem)",
+                    fontWeight: 300,
+                    color: "#F3EFE7",
+                    lineHeight: 1.3,
+                    letterSpacing: "0.01em",
+                    marginBottom: "0.9rem",
+                    transition: "color 0.4s ease",
+                  }}
+                >
+                  {article.title}
+                </div>
+                <p
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.83rem",
+                    lineHeight: 1.85,
+                    color: "#9CA3AF",
+                    fontWeight: 300,
+                    margin: 0,
+                  }}
+                >
+                  {article.excerpt}
+                </p>
+              </div>
+
+              {/* Read time */}
+              <div
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.65rem",
+                  color: "rgba(156,163,175,0.3)",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  textAlign: "right",
+                  paddingTop: "0.25rem",
+                }}
+              >
+                {article.readTime}
+              </div>
+            </div>
+          </Reveal>
+        ))}
+        <div style={{ borderTop: "1px solid rgba(200,139,90,0.08)" }} />
+      </div>
+    </section>
+  );
+}
