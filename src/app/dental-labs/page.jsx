@@ -261,6 +261,24 @@ export default function DentalLabsPage() {
                 ArchLife for Dental Labs
               </div>
             </Reveal>
+            <Reveal delay={35}>
+              <div
+                style={{
+                  display: "inline-block",
+                  border: "1px solid rgba(200,139,90,0.3)",
+                  color: "#C88B5A",
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.58rem",
+                  letterSpacing: "0.16em",
+                  lineHeight: 1.2,
+                  marginBottom: "1.35rem",
+                  padding: "0.35rem 0.55rem",
+                  textTransform: "uppercase",
+                }}
+              >
+                Pilot-ready engagement
+              </div>
+            </Reveal>
             <Reveal delay={80}>
               <h1
                 className="den-hero-title"

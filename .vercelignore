@@ -1,0 +1,10 @@
+node_modules
+.vercel
+.react-router
+.vitest
+build
+*.log
+.env*
+.git
+.claude
+bun.lockb

@@ -3,15 +3,16 @@ import { AtmosphericCanvas } from "@/components/AtmosphericCanvas/AtmosphericCan
 import { Nav } from "@/components/Navigation/Navigation";
 import { Footer } from "@/components/Footer/Footer";
 import { GlobalStyles } from "@/components/GlobalStyles/GlobalStyles";
+import { ProductMapSection } from "@/components/ProductMapSection/ProductMapSection";
 import { Reveal } from "@/components/Reveal/Reveal";
 import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
 
 export const meta = () => [
-  { title: "ArchLife" },
+  { title: "ArchLife | Healthcare AI Governance and Operations" },
   {
     name: "description",
     content:
-      "Reflective infrastructure for adaptive systems under strain. ArchLife builds systems that help institutions remain aware of themselves under conditions of overload, uncertainty, and accelerating intelligence.",
+      "ArchLife builds governance and operating systems for healthcare AI and high-strain institutions, spanning live prototypes, operational engagements, and research foundations.",
   },
 ];
 
@@ -184,7 +185,7 @@ function MirrorMockup() {
               textTransform: "uppercase",
             }}
           >
-            · Active Session
+            · Illustrative Scenario
           </span>
         </div>
         <span
@@ -194,7 +195,7 @@ function MirrorMockup() {
             color: "rgba(156,163,175,0.3)",
           }}
         >
-          {847 + tick * 3} events
+          synthetic data
         </span>
       </div>
 
@@ -395,6 +396,18 @@ function MirrorMockup() {
             </span>
           </div>
         ))}
+        <div
+          style={{
+            fontSize: "0.5rem",
+            letterSpacing: "0.1em",
+            color: "rgba(156,163,175,0.28)",
+            lineHeight: 1.5,
+            marginTop: "0.4rem",
+            textTransform: "uppercase",
+          }}
+        >
+          Illustrative scenario metrics. Not live clinical data.
+        </div>
       </div>
     </div>
   );
@@ -460,13 +473,13 @@ export default function ArchLifePage() {
               marginBottom: "2.8rem",
             }}
           >
-            Reflective infrastructure
-            <br className="hero-br" />
-            for adaptive systems
+            Governance and operating systems
             <br className="hero-br" />
             <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
-              under strain.
+              for healthcare AI
             </em>
+            <br className="hero-br" />
+            and high-strain institutions.
           </h1>
         </Reveal>
 
@@ -482,9 +495,9 @@ export default function ArchLifePage() {
               fontWeight: 300,
             }}
           >
-            From healthcare governance to reflective simulation — how humans
-            and institutions preserve continuity, coordination, and dignity
-            as AI becomes embedded in real-world systems.
+            ArchLife combines practical operating work with prototypes and
+            research to help institutions recognise strain, make trade-offs
+            visible, and govern AI with more care.
           </p>
         </Reveal>
 
@@ -498,7 +511,7 @@ export default function ArchLifePage() {
             }}
           >
             <a
-              href="https://sandbox-v2.archlife.in"
+              href="https://mirror.archlife.in"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -524,10 +537,10 @@ export default function ArchLifePage() {
                 e.currentTarget.style.borderColor = "rgba(200,139,90,0.38)";
               }}
             >
-              Open Institutional Mirror
+              Explore Institutional Mirror
             </a>
             <a
-              href="/canon"
+              href="/dental-labs"
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: "0.7rem",
@@ -549,7 +562,7 @@ export default function ArchLifePage() {
                 e.currentTarget.style.borderColor = "rgba(156,163,175,0.12)";
               }}
             >
-              Enter the Canon
+              For Dental Labs
             </a>
           </div>
         </Reveal>
@@ -577,6 +590,8 @@ export default function ArchLifePage() {
           </div>
         </Reveal>
       </section>
+
+      <ProductMapSection />
 
       {/* ═══════════════════════════════════════
           WHY ARCHLIFE EXISTS
@@ -838,7 +853,7 @@ export default function ArchLifePage() {
         }}
       >
         <Reveal>
-          <SectionLabel>In Practice</SectionLabel>
+          <SectionLabel>Flagship Prototype</SectionLabel>
         </Reveal>
 
         <div
@@ -881,10 +896,9 @@ export default function ArchLifePage() {
                   marginBottom: "1.6rem",
                 }}
               >
-                Institutional Mirror is a reflective operational simulation
-                environment designed to model overload, governance failure,
-                trust degradation, escalation dynamics, human-state effects,
-                and adaptive institutional behavior.
+                Institutional Mirror is a systemic governance simulator for
+                clinical AI systems. It explores how overload, trust,
+                escalation, and governance drift can interact under strain.
               </p>
             </Reveal>
 
@@ -899,14 +913,15 @@ export default function ArchLifePage() {
                   marginBottom: "2.5rem",
                 }}
               >
-                Not to optimize institutions into perfection. But to help them
-                remain aware under strain.
+                This live prototype uses synthetic scenario data for reflective
+                exploration. It is not a clinical decision system, monitoring
+                product, or source of live hospital performance data.
               </p>
             </Reveal>
 
             <Reveal delay={200}>
               <a
-                href="https://sandbox-v2.archlife.in"
+                href="https://mirror.archlife.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -932,7 +947,7 @@ export default function ArchLifePage() {
                     "rgba(156,163,175,0.15)";
                 }}
               >
-                sandbox-v2.archlife.in ↗
+                Open Institutional Mirror
               </a>
             </Reveal>
           </div>
@@ -1352,10 +1367,9 @@ export default function ArchLifePage() {
       >
         {[
           { label: "Canon", href: "/canon" },
-          { label: "Institutional Mirror", href: "https://sandbox-v2.archlife.in", external: true },
-          { label: "Research", href: "/healthcare" },
-          { label: "Governance", href: "/institutional-mirror" },
-          { label: "Essays", href: "/articles" },
+          { label: "Institutional Mirror", href: "https://mirror.archlife.in", external: true },
+          { label: "Dental Labs", href: "/dental-labs" },
+          { label: "MedEvolv", href: "https://medevolv.in", external: true },
           { label: "Contact", href: "/contact" },
         ].map((l) => (
           <a

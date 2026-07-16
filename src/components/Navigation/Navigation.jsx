@@ -19,25 +19,14 @@ export function Nav() {
   }, []);
 
   const links = [
-    { label: "Canon", href: "/canon" },
-    { label: "SolaEiMara", href: "/solaeimara" },
-    { label: "Mirror", href: "https://sandbox-v2.archlife.in", external: true },
-    { label: "Healthcare", href: "/healthcare" },
+    { label: "Projects", href: "/#work" },
     { label: "Dental Labs", href: "/dental-labs" },
-    { label: "MedEvolv", href: "https://medevolv.in", external: true },
-    { label: "Book", href: "/book" },
-    { label: "Articles", href: "/articles" },
+    { label: "Canon", href: "/canon" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
 
   const goTo = (link) => {
-    if (link.external) {
-      window.location.href = link.href;
-      setMenuOpen(false);
-      return;
-    }
-
     window.location.href = link.href;
     setMenuOpen(false);
   };
@@ -107,7 +96,7 @@ export function Nav() {
 
       {/* Desktop links */}
       {!isMobile && (
-        <div style={{ display: "flex", alignItems: "center", gap: "2.5rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "clamp(1rem, 2.4vw, 2.5rem)" }}>
           {links.map((l) => (
             <button
               key={l.href}

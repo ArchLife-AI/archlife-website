@@ -31,6 +31,7 @@ import { toPng } from 'html-to-image';
 import { useNavigate } from 'react-router';
 import { serializeError } from 'serialize-error';
 import { Toaster, toast } from 'sonner';
+import { Analytics } from '@vercel/analytics/react';
 import { useDevServerHeartbeat } from '../__create/useDevServerHeartbeat';
 import '../__create/design-mode';
 import type { Route } from './+types/root';
@@ -458,6 +459,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <Toaster position={isMobile ? 'top-center' : 'bottom-right'} />
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
         <link rel="preconnect" href="https://ka-p.fontawesome.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://ka-p.fontawesome.com/releases/v6.3.0/css/pro.min.css?token=2c15cc0cc7" crossOrigin="anonymous" />
       </body>

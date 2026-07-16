@@ -35,6 +35,32 @@ export function Footer() {
         >
           Systems Architecture Initiative · archlife.in
         </div>
+        <a
+          href="https://www.linkedin.com/in/dr-ishaan-wadhwa-98a017244"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontSize: "0.62rem",
+            letterSpacing: "0.08em",
+            color: "rgba(156,163,175,0.36)",
+            textTransform: "uppercase",
+            textDecoration: "none",
+            borderBottom: "1px solid rgba(156,163,175,0.16)",
+            paddingBottom: 2,
+            transition: "color 220ms ease, border-color 220ms ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = "rgba(243,239,231,0.72)";
+            e.currentTarget.style.borderBottomColor = "rgba(200,139,90,0.42)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = "rgba(156,163,175,0.36)";
+            e.currentTarget.style.borderBottomColor = "rgba(156,163,175,0.16)";
+          }}
+        >
+          Dr. Ishaan Wadhwa
+        </a>
         <div
           style={{
             fontFamily: "'Inter', sans-serif",

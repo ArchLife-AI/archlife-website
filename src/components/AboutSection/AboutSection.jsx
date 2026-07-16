@@ -153,8 +153,51 @@ export function AboutSection() {
                 marginBottom: "0.9rem",
               }}
             >
-              BDS &middot; Business Analyst, Clove Dental &middot; Healthcare Lead, AI Collective
+              BDS &middot; Business Analyst, Clove Dental &middot; Organiser and Healthcare Lead, The AI Collective Delhi NCR Chapter
             </div>
+            <div
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.6rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                color: "rgba(155,94,69,0.5)",
+                marginBottom: "0.9rem",
+                lineHeight: 1.6,
+              }}
+            >
+              PGP, Applied AI &amp; Agentic Systems, Masters&apos; Union &middot; Joining August 2026
+            </div>
+            <a
+              href="https://www.linkedin.com/in/dr-ishaan-wadhwa-98a017244"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.72rem",
+                lineHeight: 1.5,
+                color: "rgba(243,239,231,0.68)",
+                textDecoration: "none",
+                borderBottom: "1px solid rgba(200,139,90,0.32)",
+                paddingBottom: 2,
+                marginBottom: "1.2rem",
+                letterSpacing: 0,
+                transition: "color 220ms ease, border-color 220ms ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#F3EFE7";
+                e.currentTarget.style.borderBottomColor =
+                  "rgba(200,139,90,0.68)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "rgba(243,239,231,0.68)";
+                e.currentTarget.style.borderBottomColor =
+                  "rgba(200,139,90,0.32)";
+              }}
+            >
+              LinkedIn profile
+            </a>
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
@@ -169,6 +212,118 @@ export function AboutSection() {
               <br />
               Humane infrastructure. Reflexive systems.
             </p>
+
+            <div
+              style={{
+                borderTop: "1px solid rgba(200,139,90,0.16)",
+                marginTop: "2.75rem",
+                paddingTop: "2.75rem",
+              }}
+            >
+              <img
+                src="/aakash-sahai.jpeg"
+                alt="Dr. Aakash Sahai"
+                style={{
+                  width: "100%",
+                  aspectRatio: "3/4",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                  marginBottom: "1.8rem",
+                  filter: "brightness(0.94) contrast(1.03) saturate(0.86)",
+                }}
+              />
+              <div
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "1.15rem",
+                  color: "#F3EFE7",
+                  marginBottom: "0.3rem",
+                  fontWeight: 400,
+                }}
+              >
+                Dr. Aakash Sahai
+              </div>
+              <div
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.62rem",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "#9B5E45",
+                  marginBottom: "0.4rem",
+                }}
+              >
+                Director, ArchLife
+              </div>
+              <div
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.6rem",
+                  letterSpacing: "0.14em",
+                  textTransform: "uppercase",
+                  color: "rgba(155,94,69,0.5)",
+                  marginBottom: "1.15rem",
+                  lineHeight: 1.6,
+                }}
+              >
+                Founder, Lajpat Nagar Dental Clinic &middot; Endodontist
+              </div>
+              <p
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.8rem",
+                  color: "rgba(156,163,175,0.72)",
+                  lineHeight: 1.75,
+                  margin: "0 0 1.1rem",
+                  fontWeight: 300,
+                }}
+              >
+                Dr. Aakash Sahai is an expert endodontist and founder of Lajpat
+                Nagar Dental Clinic in South Delhi. His perspective brings
+                frontline clinical practice, practice ownership, and endodontic
+                expertise into ArchLife&apos;s work on humane healthcare systems and
+                operations.
+              </p>
+              <p
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "0.8rem",
+                  color: "rgba(156,163,175,0.72)",
+                  lineHeight: 1.75,
+                  margin: "0 0 1.35rem",
+                  fontWeight: 300,
+                }}
+              >
+                He grounds the work in the daily realities of care delivery:
+                clinical judgment, patient trust, coordination, and the operating
+                conditions of an independent dental practice.
+              </p>
+              <div
+                style={{
+                  borderTop: "1px solid rgba(200,139,90,0.12)",
+                  paddingTop: "1rem",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.64rem",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "rgba(216,222,230,0.58)",
+                    lineHeight: 1.8,
+                    margin: 0,
+                  }}
+                >
+                  BDS, ESIC Dental College (2014-2019)
+                  <br />
+                  MDS, Endodontics, AIIMS Delhi (July 2020-July 2024)
+                  <br />
+                  Endodontics Specialty Clinic, VMMC &amp; Safdarjung Hospital
+                </p>
+              </div>
+            </div>
           </div>
         </Reveal>
       </div>

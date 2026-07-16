@@ -43,13 +43,13 @@ export function ContactSection() {
             fontWeight: 300,
           }}
         >
-          For institutional partnerships, research collaboration, or healthcare
-          intelligence initiatives.
+          Choose a route for institutional partnerships, research collaboration,
+          healthcare operations, or an early product conversation.
         </p>
       </Reveal>
       <Reveal delay={250}>
         <a
-          href="mailto:hello@archlife.in"
+          href="/contact"
           style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: "0.75rem",
@@ -75,7 +75,7 @@ export function ContactSection() {
             e.currentTarget.style.borderColor = "rgba(200,139,90,0.4)";
           }}
         >
-          hello@archlife.in
+          Choose a conversation route
         </a>
       </Reveal>
     </section>
