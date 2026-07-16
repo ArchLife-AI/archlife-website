@@ -26,11 +26,6 @@ export function Nav() {
     { label: "Contact", href: "/contact" },
   ];
 
-  const goTo = (link) => {
-    window.location.href = link.href;
-    setMenuOpen(false);
-  };
-
   return (
     <nav
       style={{
@@ -51,14 +46,9 @@ export function Nav() {
       }}
     >
       {/* Logo */}
-      <button
-        onClick={() => {
-          if (window.location.pathname !== "/") {
-            window.location.href = "/";
-            return;
-          }
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
+      <a
+        href="/"
+        aria-label="ArchLife home"
         style={{
           background: "none",
           border: "none",
@@ -92,15 +82,15 @@ export function Nav() {
         >
           ArchLife
         </span>
-      </button>
+      </a>
 
       {/* Desktop links */}
       {!isMobile && (
         <div style={{ display: "flex", alignItems: "center", gap: "clamp(1rem, 2.4vw, 2.5rem)" }}>
           {links.map((l) => (
-            <button
+            <a
               key={l.href}
-              onClick={() => goTo(l)}
+              href={l.href}
               style={{
                 background: "none",
                 border: "none",
@@ -118,7 +108,7 @@ export function Nav() {
               onMouseLeave={(e) => (e.currentTarget.style.color = "#9CA3AF")}
             >
               {l.label}
-            </button>
+            </a>
           ))}
         </div>
       )}
@@ -137,6 +127,8 @@ export function Nav() {
             gap: "5px",
           }}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           <div
             style={{
@@ -189,11 +181,13 @@ export function Nav() {
             flexDirection: "column",
             gap: "1.4rem",
           }}
+          id="mobile-navigation"
         >
           {links.map((l) => (
-            <button
+            <a
               key={l.href}
-              onClick={() => goTo(l)}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
               style={{
                 background: "none",
                 border: "none",
@@ -209,7 +203,7 @@ export function Nav() {
               }}
             >
               {l.label}
-            </button>
+            </a>
           ))}
         </div>
       )}

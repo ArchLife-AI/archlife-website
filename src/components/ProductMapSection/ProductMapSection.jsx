@@ -185,7 +185,7 @@ export function ProductMapSection() {
           padding: 0.3rem 0.5rem;
           color: #C88B5A;
           font-family: 'Inter', sans-serif;
-          font-size: 0.55rem;
+          font-size: 0.7rem;
           font-weight: 400;
           letter-spacing: 0.14em;
           line-height: 1.2;
@@ -193,9 +193,9 @@ export function ProductMapSection() {
         }
         .product-map-category {
           margin-top: 1.25rem;
-          color: rgba(156,163,175,0.45);
+          color: rgba(156,163,175,0.72);
           font-family: 'Inter', sans-serif;
-          font-size: 0.6rem;
+          font-size: 0.7rem;
           letter-spacing: 0.16em;
           line-height: 1.4;
           text-transform: uppercase;
@@ -212,7 +212,7 @@ export function ProductMapSection() {
           margin: 0;
           color: rgba(156,163,175,0.78);
           font-family: 'Inter', sans-serif;
-          font-size: 0.78rem;
+          font-size: 0.9rem;
           font-weight: 300;
           line-height: 1.85;
         }
@@ -220,7 +220,7 @@ export function ProductMapSection() {
         .product-map-foundation a {
           color: rgba(243,239,231,0.72);
           font-family: 'Inter', sans-serif;
-          font-size: 0.62rem;
+          font-size: 0.75rem;
           letter-spacing: 0.14em;
           line-height: 1.4;
           text-decoration: none;
@@ -246,7 +246,7 @@ export function ProductMapSection() {
         .product-map-foundation span {
           color: #9B5E45;
           font-family: 'Inter', sans-serif;
-          font-size: 0.58rem;
+          font-size: 0.7rem;
           letter-spacing: 0.16em;
           line-height: 1.4;
           text-transform: uppercase;
@@ -254,7 +254,7 @@ export function ProductMapSection() {
         .product-map-routes a {
           color: rgba(156,163,175,0.72);
           font-family: 'Inter', sans-serif;
-          font-size: 0.66rem;
+          font-size: 0.78rem;
           letter-spacing: 0.05em;
           line-height: 1.4;
           text-decoration: none;
@@ -270,7 +270,7 @@ export function ProductMapSection() {
           margin: 0;
           color: rgba(156,163,175,0.6);
           font-family: 'Inter', sans-serif;
-          font-size: 0.72rem;
+          font-size: 0.85rem;
           font-weight: 300;
           line-height: 1.75;
         }

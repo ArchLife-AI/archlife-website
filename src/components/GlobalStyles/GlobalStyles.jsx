@@ -39,6 +39,11 @@ export function GlobalStyles() {
         color: #F3EFE7;
       }
 
+      :focus-visible {
+        outline: 2px solid #C88B5A;
+        outline-offset: 4px;
+      }
+
       ::-webkit-scrollbar { width: 4px; }
       ::-webkit-scrollbar-track { background: #0D0F12; }
       ::-webkit-scrollbar-thumb { background: rgba(156,163,175,0.2); border-radius: 2px; }
