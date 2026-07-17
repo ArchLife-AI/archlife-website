@@ -18,6 +18,8 @@ type Tree = {
 	isCatchAll: boolean;
 };
 
+const IGNORED_ROUTE_DIRECTORIES = new Set(['errors']);
+
 function buildRouteTree(dir: string, basePath = ''): Tree {
 	const files = readdirSync(dir);
 	const node: Tree = {
@@ -49,6 +51,7 @@ function buildRouteTree(dir: string, basePath = ''): Tree {
 		const stat = statSync(filePath);
 
 		if (stat.isDirectory()) {
+			if (IGNORED_ROUTE_DIRECTORIES.has(file)) continue;
 			const childPath = basePath ? `${basePath}/${file}` : file;
 			const childNode = buildRouteTree(filePath, childPath);
 			node.children.push(childNode);

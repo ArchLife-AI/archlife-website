@@ -626,7 +626,6 @@ function Strata({ onSelect, hoveredId, setHoveredId }) {
             onMouseLeave={() => setHoveredId(null)}
             style={{
               cursor: "pointer",
-              background: "transparent",
               border: "none",
               borderLeft: `3px solid ${s.color}`,
               padding: "1.4rem 1.6rem",
