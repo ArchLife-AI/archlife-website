@@ -3,6 +3,17 @@
   "outputDirectory": "build/client",
   "framework": null,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/articles", "destination": "/index.html" },
+    { "source": "/book", "destination": "/index.html" },
+    { "source": "/canon", "destination": "/index.html" },
+    { "source": "/contact", "destination": "/index.html" },
+    { "source": "/dental-labs", "destination": "/index.html" },
+    { "source": "/healthcare", "destination": "/index.html" },
+    { "source": "/institutional-mirror", "destination": "/index.html" },
+    { "source": "/medevolv", "destination": "/index.html" },
+    { "source": "/sensorium", "destination": "/index.html" },
+    { "source": "/solaeimara", "destination": "/index.html" }
   ]
 }

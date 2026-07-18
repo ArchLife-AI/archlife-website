@@ -118,7 +118,7 @@ if (import.meta.env.DEV) {
 const tree = buildRouteTree(__dirname);
 const routes = [
   ...generateRoutes(tree),
-  ...(import.meta.env.DEV ? [route('*?', './__create/not-found.tsx')] : []),
+  route('*', './not-found.jsx'),
 ];
 
 export default routes;

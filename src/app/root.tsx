@@ -38,6 +38,21 @@ import type { Route } from './+types/root';
 
 export const links = () => [];
 
+const PUBLIC_CANONICAL_PATHS = [
+  '/',
+  '/about',
+  '/articles',
+  '/book',
+  '/canon',
+  '/contact',
+  '/dental-labs',
+  '/healthcare',
+  '/institutional-mirror',
+  '/medevolv',
+  '/sensorium',
+  '/solaeimara'
+];
+
 if (globalThis.window && globalThis.window !== undefined) {
   globalThis.window.fetch = fetch;
 }
@@ -412,6 +427,10 @@ export function Layout({ children }: { children: ReactNode }) {
   const navigate = useNavigate();
   const location = useLocation();
   const pathname = location?.pathname;
+  const normalizedPath = pathname === '/' ? '/' : pathname?.replace(/\/+$/, '');
+  const canonicalHref = PUBLIC_CANONICAL_PATHS.includes(normalizedPath || '')
+    ? `https://archlife.in${normalizedPath === '/' ? '/' : normalizedPath}`
+    : null;
   const isMobile = typeof window !== 'undefined' ? window.innerWidth < 768 : false;
   useEffect(() => {
     if (!import.meta.env.DEV) return;
@@ -444,12 +463,8 @@ export function Layout({ children }: { children: ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>ArchLife | Healthcare AI Governance and Operations</title>
-        <meta
-          name="description"
-          content="ArchLife builds governance and operating systems for healthcare AI and high-strain institutions."
-        />
         <Meta />
+        {canonicalHref && <link rel="canonical" href={canonicalHref} />}
         <Links />
         {import.meta.env.DEV && (
           <>
