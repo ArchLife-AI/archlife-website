@@ -2,7 +2,7 @@ import { ProjectProfile } from "@/components/ProjectProfile/ProjectProfile";
 
 const project = {
   label: "MedEvolv",
-  status: "Live ecosystem product",
+  status: "Live public preview",
   heroBefore: "Pathways for healthcare",
   heroEmphasis: "professionals in transition.",
   lead:
@@ -32,9 +32,9 @@ const project = {
         "Treating coordination, workflow design, and institutional infrastructure as meaningful areas of professional practice.",
     },
   ],
-  nextTitle: "Continue to the live MedEvolv product.",
+  nextTitle: "Continue to the MedEvolv public preview.",
   nextBody:
-    "Visit MedEvolv to explore its current public work. For an ecosystem or collaboration conversation, begin with ArchLife.",
+    "Visit MedEvolv to see its current public pathways and job-intelligence preview. Learning, practitioner, placement, pricing, and credential offerings remain under development.",
   nextLiveAction: "Open MedEvolv",
 };
 
@@ -43,7 +43,7 @@ export const meta = () => [
   {
     name: "description",
     content:
-      "MedEvolv is an ArchLife ecosystem product exploring analytical, operational, and AI-enabled pathways for healthcare professionals.",
+      "MedEvolv is an ArchLife public preview developing career infrastructure for healthcare professionals exploring analytical, operational, and AI-enabled pathways.",
   },
 ];
 

@@ -23,10 +23,10 @@ const offerings = [
   },
   {
     title: "MedEvolv",
-    status: "Ecosystem product",
-    category: "Healthcare access",
+    status: "Live public preview",
+    category: "Healthcare career infrastructure",
     description:
-      "A care-access platform in the ArchLife ecosystem, translating health-system insight into a patient-facing operating model.",
+      "A developing career-support surface for healthcare professionals exploring non-clinical pathways, with public job intelligence shown only when its feed can be verified.",
     href: "/medevolv",
     action: "View the project",
   },
