@@ -7,7 +7,7 @@ const project = {
   heroEmphasis: "move through.",
   lead:
     "The Sensorium is a spatial listening experience for people who want to explore music with more intention. It brings together a walkable environment, atmosphere, and self-directed reflection.",
-  liveUrl: "https://sensorium-walk.vercel.app",
+  liveUrl: "https://thesensorium.archlife.in",
   liveAction: "Enter the live walk",
   contactAction: "Discuss a collaboration",
   note:

@@ -159,7 +159,7 @@ export function HeroSection() {
             Explore Healthcare
           </a>
           <a
-            href="https://sandbox-v2.archlife.in"
+            href="https://mirror.archlife.in"
             style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: "0.75rem",
