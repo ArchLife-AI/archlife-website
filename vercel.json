@@ -2,6 +2,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build/client",
   "framework": null,
+  "redirects": [
+    { "source": "/manthan", "destination": "https://manthan.archlife.in/", "permanent": true },
+    { "source": "/manthan/:path*", "destination": "https://manthan.archlife.in/:path*", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },
