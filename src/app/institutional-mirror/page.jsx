@@ -8,9 +8,9 @@ import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
 const MIRROR_URL = "https://mirror.archlife.in";
 
 const pageShell = {
-  background: "#0D0F12",
+  background: "var(--bg)",
   minHeight: "100vh",
-  color: "#F3EFE7",
+  color: "var(--ink)",
   overflowX: "hidden",
   position: "relative",
 };
@@ -24,16 +24,16 @@ const sectionStyle = {
 };
 
 const bodyText = {
-  color: "#9CA3AF",
-  fontFamily: "'Inter', sans-serif",
+  color: "var(--muted)",
+  fontFamily: "var(--sans)",
   fontSize: "0.9rem",
   fontWeight: 300,
   lineHeight: 1.9,
 };
 
 const titleText = {
-  color: "#F3EFE7",
-  fontFamily: "'Cormorant Garamond', serif",
+  color: "var(--ink)",
+  fontFamily: "var(--serif)",
   fontWeight: 300,
   letterSpacing: 0,
 };
@@ -132,9 +132,9 @@ export default function InstitutionalMirrorPage() {
               <div
                 style={{
                   border: "1px solid rgba(200,139,90,0.3)",
-                  color: "#C88B5A",
+                  color: "var(--gold)",
                   display: "inline-block",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.58rem",
                   letterSpacing: "0.16em",
                   lineHeight: 1.2,
@@ -158,7 +158,7 @@ export default function InstitutionalMirrorPage() {
               >
                 A governance simulator for
                 <br />
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                   clinical AI systems.
                 </em>
               </h1>
@@ -218,7 +218,7 @@ export default function InstitutionalMirrorPage() {
                 }}
               >
                 When an institution is under strain, the first loss is often
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}> awareness.</em>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}> awareness.</em>
               </h2>
             </Reveal>
             <Reveal delay={135}>
@@ -291,7 +291,7 @@ export default function InstitutionalMirrorPage() {
                 }}
               >
                 Exploration is not
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}> deployment.</em>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}> deployment.</em>
               </h2>
             </Reveal>
             <div>
@@ -350,8 +350,8 @@ export default function InstitutionalMirrorPage() {
         .mirror-primary-action {
           background: rgba(200,139,90,0.08);
           border: 1px solid rgba(200,139,90,0.45);
-          color: #F3EFE7;
-          font-family: 'Inter', sans-serif;
+          color: var(--ink);
+          font-family: var(--sans);
           font-size: 0.7rem;
           letter-spacing: 0.14em;
           line-height: 1.2;
@@ -361,7 +361,7 @@ export default function InstitutionalMirrorPage() {
         }
         .mirror-secondary-action {
           color: rgba(156,163,175,0.82);
-          font-family: 'Inter', sans-serif;
+          font-family: var(--sans);
           font-size: 0.68rem;
           letter-spacing: 0.12em;
           line-height: 1.5;
@@ -371,7 +371,7 @@ export default function InstitutionalMirrorPage() {
         }
         .mirror-status-note {
           color: rgba(156,163,175,0.5);
-          font-family: 'Inter', sans-serif;
+          font-family: var(--sans);
           font-size: 0.64rem;
           letter-spacing: 0.08em;
           line-height: 1.7;
@@ -405,15 +405,15 @@ export default function InstitutionalMirrorPage() {
           padding-right: 0;
         }
         .mirror-audience-index {
-          color: #9B5E45;
-          font-family: 'Inter', sans-serif;
+          color: var(--gold-deep);
+          font-family: var(--sans);
           font-size: 0.58rem;
           letter-spacing: 0.16em;
           line-height: 1.3;
         }
         .mirror-audience-item p {
           color: rgba(243,239,231,0.78);
-          font-family: 'Cormorant Garamond', serif;
+          font-family: var(--serif);
           font-size: clamp(1.3rem, 2.3vw, 1.65rem);
           font-weight: 300;
           line-height: 1.35;
@@ -422,7 +422,7 @@ export default function InstitutionalMirrorPage() {
         .mirror-boundary-item {
           border-top: 1px solid rgba(200,139,90,0.1);
           color: rgba(243,239,231,0.72);
-          font-family: 'Inter', sans-serif;
+          font-family: var(--sans);
           font-size: 0.84rem;
           font-weight: 300;
           line-height: 1.75;
@@ -435,8 +435,8 @@ export default function InstitutionalMirrorPage() {
           padding: clamp(3rem, 7vw, 5rem) 0;
         }
         .mirror-next-step h2 {
-          color: #F3EFE7;
-          font-family: 'Cormorant Garamond', serif;
+          color: var(--ink);
+          font-family: var(--serif);
           font-size: clamp(2.3rem, 5vw, 4.4rem);
           font-weight: 300;
           letter-spacing: 0;
@@ -445,8 +445,8 @@ export default function InstitutionalMirrorPage() {
           max-width: 760px;
         }
         .mirror-next-step p {
-          color: #9CA3AF;
-          font-family: 'Inter', sans-serif;
+          color: var(--muted);
+          font-family: var(--sans);
           font-size: 0.9rem;
           font-weight: 300;
           line-height: 1.9;

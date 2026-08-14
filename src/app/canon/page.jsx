@@ -533,7 +533,7 @@ function Constellation({ activeId, hoveredId, onHover, onClick }) {
               textAnchor="middle"
               fill={highlighted ? "#F3EFE7" : "rgba(243,239,231,0.65)"}
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--serif)",
                 fontSize: n.type === "center" ? "16px" : "13.5px",
                 fontWeight: 300,
                 letterSpacing: "0.02em",
@@ -605,7 +605,7 @@ function ConceptPanel({ id, onClose, onJump }) {
             height: 34,
             borderRadius: "50%",
             cursor: "pointer",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.85rem",
             transition: "all 0.3s ease",
             display: "flex",
@@ -614,7 +614,7 @@ function ConceptPanel({ id, onClose, onJump }) {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.borderColor = "rgba(200,139,90,0.5)";
-            e.currentTarget.style.color = "#F3EFE7";
+            e.currentTarget.style.color = "var(--ink)";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.borderColor = "rgba(200,139,90,0.18)";
@@ -627,7 +627,7 @@ function ConceptPanel({ id, onClose, onJump }) {
         {/* Cluster tag */}
         <div
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.58rem",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
@@ -653,11 +653,11 @@ function ConceptPanel({ id, onClose, onJump }) {
         {/* Title */}
         <h2
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--serif)",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 300,
             lineHeight: 1.1,
-            color: "#F3EFE7",
+            color: "var(--ink)",
             margin: 0,
             marginBottom: "2rem",
             letterSpacing: "-0.01em",
@@ -670,12 +670,12 @@ function ConceptPanel({ id, onClose, onJump }) {
         <Block label="Definition">
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "1.15rem",
               fontStyle: "italic",
               fontWeight: 300,
               lineHeight: 1.6,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               margin: 0,
             }}
           >
@@ -709,7 +709,7 @@ function ConceptPanel({ id, onClose, onJump }) {
                     border: `1px solid ${r.color}55`,
                     color: r.color,
                     padding: "0.5rem 0.9rem",
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.66rem",
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
@@ -737,7 +737,7 @@ function ConceptPanel({ id, onClose, onJump }) {
             <div
               key={title}
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--serif)",
                 fontSize: "1.05rem",
                 fontWeight: 300,
                 color: "rgba(243,239,231,0.7)",
@@ -764,7 +764,7 @@ function ConceptPanel({ id, onClose, onJump }) {
             marginTop: "3rem",
             paddingTop: "2rem",
             borderTop: "1px solid rgba(200,139,90,0.08)",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.6rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -790,11 +790,11 @@ function Block({ label, children }) {
     <div style={{ marginBottom: "2.4rem" }}>
       <div
         style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "var(--sans)",
           fontSize: "0.58rem",
           letterSpacing: "0.22em",
           textTransform: "uppercase",
-          color: "#9B5E45",
+          color: "var(--gold-deep)",
           marginBottom: "0.9rem",
         }}
       >
@@ -809,7 +809,7 @@ function Body({ children }) {
   return (
     <p
       style={{
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "var(--sans)",
         fontSize: "0.85rem",
         lineHeight: 1.92,
         color: "rgba(243,239,231,0.7)",
@@ -832,7 +832,7 @@ function ItemList({ items, accent }) {
             display: "flex",
             alignItems: "baseline",
             gap: "0.8rem",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.82rem",
             lineHeight: 1.75,
             color: "rgba(243,239,231,0.65)",
@@ -899,11 +899,11 @@ export default function CanonPage() {
         <Reveal>
           <div
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.6rem",
               letterSpacing: "0.3em",
               textTransform: "uppercase",
-              color: "#9B5E45",
+              color: "var(--gold-deep)",
               marginBottom: "2.2rem",
             }}
           >
@@ -914,24 +914,24 @@ export default function CanonPage() {
         <Reveal delay={60}>
           <h1
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(3rem, 7vw, 5.6rem)",
               fontWeight: 300,
               lineHeight: 1.05,
               letterSpacing: "-0.02em",
-              color: "#F3EFE7",
+              color: "var(--ink)",
               margin: 0,
               marginBottom: "2rem",
             }}
           >
-            The <em style={{ color: "#C88B5A", fontStyle: "italic" }}>Canon.</em>
+            The <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Canon.</em>
           </h1>
         </Reveal>
 
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.2rem, 2.4vw, 1.7rem)",
               fontStyle: "italic",
               fontWeight: 300,
@@ -948,7 +948,7 @@ export default function CanonPage() {
         <Reveal delay={180}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.9rem",
               lineHeight: 1.95,
               color: "rgba(156,163,175,0.85)",
@@ -966,7 +966,7 @@ export default function CanonPage() {
         <Reveal delay={220}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.84rem",
               lineHeight: 1.9,
               color: "rgba(156,163,175,0.55)",
@@ -985,11 +985,11 @@ export default function CanonPage() {
           <a
             href="#topology"
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.7rem",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#F3EFE7",
+              color: "var(--ink)",
               border: "1px solid rgba(200,139,90,0.4)",
               padding: "0.9rem 2rem",
               textDecoration: "none",
@@ -1032,7 +1032,7 @@ export default function CanonPage() {
         <Reveal delay={60}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.78rem",
               letterSpacing: "0.04em",
               color: "rgba(156,163,175,0.55)",
@@ -1071,7 +1071,7 @@ export default function CanonPage() {
           <div className="canon-mobile-list" style={{ display: "none" }}>
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
@@ -1115,10 +1115,10 @@ export default function CanonPage() {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.56rem",
                     letterSpacing: "0.18em",
-                    color: "#9B5E45",
+                    color: "var(--gold-deep)",
                     width: 26,
                     flexShrink: 0,
                   }}
@@ -1127,10 +1127,10 @@ export default function CanonPage() {
                 </span>
                 <span
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: n.type === "center" ? "1.35rem" : "1.15rem",
                     fontWeight: 300,
-                    color: "#F3EFE7",
+                    color: "var(--ink)",
                     fontStyle: n.type === "center" ? "italic" : "normal",
                     letterSpacing: "-0.005em",
                     flex: 1,
@@ -1140,7 +1140,7 @@ export default function CanonPage() {
                 </span>
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.65rem",
                     color: "rgba(156,163,175,0.35)",
                     flexShrink: 0,
@@ -1191,7 +1191,7 @@ export default function CanonPage() {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.6rem",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
@@ -1226,10 +1226,10 @@ export default function CanonPage() {
         <Reveal delay={60}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.7rem, 3.5vw, 2.6rem)",
               fontWeight: 300,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               marginBottom: "3rem",
               maxWidth: 640,
               lineHeight: 1.2,
@@ -1263,11 +1263,11 @@ export default function CanonPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.58rem",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
-                    color: "#9B5E45",
+                    color: "var(--gold-deep)",
                     marginBottom: "1rem",
                     display: "flex",
                     justifyContent: "space-between",
@@ -1281,10 +1281,10 @@ export default function CanonPage() {
                 </div>
                 <h3
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: "1.45rem",
                     fontWeight: 300,
-                    color: "#F3EFE7",
+                    color: "var(--ink)",
                     lineHeight: 1.2,
                     margin: 0,
                     marginBottom: "1rem",
@@ -1295,7 +1295,7 @@ export default function CanonPage() {
                 </h3>
                 <p
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.78rem",
                     lineHeight: 1.85,
                     color: "rgba(156,163,175,0.6)",
@@ -1318,7 +1318,7 @@ export default function CanonPage() {
                           border: `1px solid ${n.color}40`,
                           color: `${n.color}DD`,
                           padding: "0.3rem 0.7rem",
-                          fontFamily: "'Inter', sans-serif",
+                          fontFamily: "var(--sans)",
                           fontSize: "0.56rem",
                           letterSpacing: "0.14em",
                           textTransform: "uppercase",
@@ -1373,26 +1373,26 @@ export default function CanonPage() {
             <div>
               <h2
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
                   fontWeight: 300,
                   lineHeight: 1.1,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   letterSpacing: "-0.01em",
                   marginBottom: "1.4rem",
                 }}
               >
                 Founder Archive &amp;{" "}
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                   Reflexive Intelligence.
                 </em>
               </h2>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.86rem",
                   lineHeight: 1.95,
-                  color: "#9CA3AF",
+                  color: "var(--muted)",
                   fontWeight: 300,
                   maxWidth: 460,
                   marginBottom: "2rem",
@@ -1404,7 +1404,7 @@ export default function CanonPage() {
               </p>
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1rem",
                   fontStyle: "italic",
                   color: "rgba(156,163,175,0.5)",
@@ -1420,11 +1420,11 @@ export default function CanonPage() {
               <a
                 href="/solaeimara"
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.7rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   border: "1px solid rgba(200,139,90,0.4)",
                   padding: "0.9rem 2rem",
                   textDecoration: "none",
@@ -1468,7 +1468,7 @@ export default function CanonPage() {
                 >
                   <span
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.55rem",
                       color: "rgba(155,94,69,0.5)",
                       letterSpacing: "0.18em",
@@ -1480,7 +1480,7 @@ export default function CanonPage() {
                   </span>
                   <span
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.15rem",
                       fontWeight: 300,
                       color: "rgba(243,239,231,0.7)",
@@ -1492,7 +1492,7 @@ export default function CanonPage() {
                   </span>
                   <span
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.62rem",
                       letterSpacing: "0.12em",
                       color: "rgba(156,163,175,0.35)",
@@ -1542,7 +1542,7 @@ export default function CanonPage() {
         <Reveal delay={80}>
           <blockquote
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.2rem, 2.6vw, 1.7rem)",
               fontWeight: 300,
               fontStyle: "italic",

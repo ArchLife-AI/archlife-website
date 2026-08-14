@@ -31,10 +31,10 @@ export default function ArticlesPage() {
         <Reveal delay={100}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.7rem, 3.5vw, 2.6rem)",
               lineHeight: 1.4,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               fontWeight: 300,
               margin: "2rem 0 0",
             }}

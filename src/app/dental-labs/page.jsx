@@ -6,9 +6,9 @@ import { Reveal } from "@/components/Reveal/Reveal";
 import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
 
 const pageShell = {
-  background: "#0D0F12",
+  background: "var(--bg)",
   minHeight: "100vh",
-  color: "#F3EFE7",
+  color: "var(--ink)",
   overflowX: "hidden",
   position: "relative",
 };
@@ -22,25 +22,25 @@ const sectionStyle = {
 };
 
 const eyebrow = {
-  fontFamily: "'Inter', sans-serif",
+  fontFamily: "var(--sans)",
   fontSize: "0.62rem",
   letterSpacing: "0.2em",
   textTransform: "uppercase",
-  color: "#9B5E45",
+  color: "var(--gold-deep)",
 };
 
 const bodyText = {
-  fontFamily: "'Inter', sans-serif",
+  fontFamily: "var(--sans)",
   fontSize: "0.9rem",
   lineHeight: 1.9,
-  color: "#9CA3AF",
+  color: "var(--muted)",
   fontWeight: 300,
 };
 
 const serifTitle = {
-  fontFamily: "'Cormorant Garamond', serif",
+  fontFamily: "var(--serif)",
   fontWeight: 300,
-  color: "#F3EFE7",
+  color: "var(--ink)",
   letterSpacing: "-0.01em",
 };
 
@@ -179,7 +179,7 @@ function Metric({ value, label }) {
           ...serifTitle,
           fontSize: "clamp(2rem, 4vw, 3.2rem)",
           lineHeight: 1,
-          color: "#C88B5A",
+          color: "var(--gold)",
           marginBottom: "0.8rem",
         }}
       >
@@ -266,8 +266,8 @@ export default function DentalLabsPage() {
                 style={{
                   display: "inline-block",
                   border: "1px solid rgba(200,139,90,0.3)",
-                  color: "#C88B5A",
-                  fontFamily: "'Inter', sans-serif",
+                  color: "var(--gold)",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.58rem",
                   letterSpacing: "0.16em",
                   lineHeight: 1.2,
@@ -295,7 +295,7 @@ export default function DentalLabsPage() {
                 <br />
                 for a dental lab
                 <br />
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                   ready to scale.
                 </em>
               </h1>
@@ -328,11 +328,11 @@ export default function DentalLabsPage() {
                   href="#engagement"
                   className="den-primary-link"
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.72rem",
                     letterSpacing: "0.16em",
                     textTransform: "uppercase",
-                    color: "#F3EFE7",
+                    color: "var(--ink)",
                     border: "1px solid rgba(200,139,90,0.45)",
                     borderRadius: "2rem",
                     padding: "0.9rem 2rem",
@@ -346,11 +346,11 @@ export default function DentalLabsPage() {
                 <a
                   href="mailto:hello@archlife.in?subject=Dental%20Lab%20Operational%20Intelligence"
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.72rem",
                     letterSpacing: "0.16em",
                     textTransform: "uppercase",
-                    color: "#9CA3AF",
+                    color: "var(--muted)",
                     textDecoration: "none",
                     padding: "0.9rem 0",
                   }}
@@ -388,7 +388,7 @@ export default function DentalLabsPage() {
                 The modern dental lab is not a typical lab.
                 <br />
                 The next constraint is
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                   {" "}
                   operating intelligence.
                 </em>
@@ -444,7 +444,7 @@ export default function DentalLabsPage() {
               Most dental labs do not fail because they lack skill.
               <br />
               They fail because they lack
-              <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+              <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                 {" "}
                 visibility.
               </em>
@@ -582,7 +582,7 @@ export default function DentalLabsPage() {
                 >
                   The likely first build:
                   <br />
-                  <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+                  <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
                     Case Intelligence System.
                   </em>
                 </h2>
@@ -713,11 +713,11 @@ export default function DentalLabsPage() {
               <a
                 href="mailto:hello@archlife.in?subject=Dental%20Lab%20Operational%20Intelligence%20alignment%20call"
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.75rem",
                   letterSpacing: "0.16em",
                   textTransform: "uppercase",
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   border: "1px solid rgba(200,139,90,0.45)",
                   borderRadius: "2rem",
                   padding: "1rem 2.4rem",

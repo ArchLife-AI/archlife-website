@@ -18,11 +18,11 @@ const BOOK_COVER_URL =
   "https://dtvoeevhaseb5.cloudfront.net/user-uploads/4c9e5e73-63c8-4ab9-b7ee-80d0d73f6505.jpg";
 
 // ── Reusable text components ─────────────────────────────────
-function Eyebrow({ children, color = "#9B5E45" }) {
+function Eyebrow({ children, color = "var(--gold-deep)" }) {
   return (
     <div
       style={{
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "var(--sans)",
         fontSize: "0.6rem",
         letterSpacing: "0.24em",
         textTransform: "uppercase",
@@ -39,11 +39,11 @@ function H2({ children }) {
   return (
     <h2
       style={{
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "var(--serif)",
         fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
         fontWeight: 300,
         lineHeight: 1.12,
-        color: "#F3EFE7",
+        color: "var(--ink)",
         letterSpacing: "-0.01em",
         margin: 0,
         marginBottom: "2rem",
@@ -58,11 +58,11 @@ function H3({ children }) {
   return (
     <h3
       style={{
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "var(--serif)",
         fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)",
         fontWeight: 300,
         fontStyle: "italic",
-        color: "#F3EFE7",
+        color: "var(--ink)",
         letterSpacing: "-0.005em",
         margin: 0,
         marginBottom: "1.1rem",
@@ -77,7 +77,7 @@ function P({ children, muted = false }) {
   return (
     <p
       style={{
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "var(--sans)",
         fontSize: "0.92rem",
         lineHeight: 1.95,
         color: muted ? "rgba(156,163,175,0.65)" : "rgba(243,239,231,0.78)",
@@ -98,7 +98,7 @@ function Quote({ children }) {
         margin: "2rem 0",
         padding: "0 0 0 1.4rem",
         borderLeft: "1px solid rgba(200,139,90,0.35)",
-        fontFamily: "'Cormorant Garamond', serif",
+        fontFamily: "var(--serif)",
         fontSize: "1.25rem",
         fontStyle: "italic",
         lineHeight: 1.65,
@@ -151,12 +151,12 @@ export default function BookPage() {
         <Reveal delay={60}>
           <h1
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2.6rem, 6vw, 5rem)",
               fontWeight: 300,
               lineHeight: 1.08,
               letterSpacing: "-0.02em",
-              color: "#F3EFE7",
+              color: "var(--ink)",
               margin: 0,
               marginBottom: "1.6rem",
             }}
@@ -164,7 +164,7 @@ export default function BookPage() {
             The Builder
             <br />
             and{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               The Architect.
             </em>
           </h1>
@@ -173,7 +173,7 @@ export default function BookPage() {
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.15rem, 2.4vw, 1.6rem)",
               fontStyle: "italic",
               fontWeight: 300,
@@ -190,7 +190,7 @@ export default function BookPage() {
         <Reveal delay={180}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.95rem",
               lineHeight: 2,
               color: "rgba(156,163,175,0.85)",
@@ -214,7 +214,7 @@ export default function BookPage() {
         <Reveal delay={60}>
           <H2>
             It began as an attempt to{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               preserve continuity through rupture.
             </em>
           </H2>
@@ -298,7 +298,7 @@ export default function BookPage() {
         <Reveal delay={60}>
           <H2>
             At the heart of the book{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               are two forces.
             </em>
           </H2>
@@ -375,7 +375,7 @@ export default function BookPage() {
         <Reveal delay={640}>
           <P>
             I call that tension{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>Manthan</em>:
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>Manthan</em>:
             the churn through which experience becomes insight, and insight
             becomes a more livable form of life.
           </P>
@@ -390,7 +390,7 @@ export default function BookPage() {
         <Reveal delay={60}>
           <H2>
             Living Therapy is a reflective practice for{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               inhabiting experience more honestly.
             </em>
           </H2>
@@ -419,7 +419,7 @@ export default function BookPage() {
         <Reveal delay={260}>
           <P>
             The central rhythm of this practice is{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>NaHzHaR.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>NaHzHaR.</em>
           </P>
         </Reveal>
 
@@ -464,10 +464,10 @@ export default function BookPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.6rem",
                     letterSpacing: "0.22em",
-                    color: "#9B5E45",
+                    color: "var(--gold-deep)",
                     width: 32,
                   }}
                 >
@@ -476,11 +476,11 @@ export default function BookPage() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "clamp(1.3rem, 2.4vw, 1.7rem)",
                       fontWeight: 300,
                       fontStyle: "italic",
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       lineHeight: 1.25,
                       marginBottom: "0.7rem",
                       letterSpacing: "-0.005em",
@@ -490,7 +490,7 @@ export default function BookPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.86rem",
                       lineHeight: 1.9,
                       color: "rgba(156,163,175,0.7)",
@@ -531,7 +531,7 @@ export default function BookPage() {
         <Reveal delay={60}>
           <H2>
             The book began with the individual mind. But it{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               did not stay there.
             </em>
           </H2>
@@ -577,7 +577,7 @@ export default function BookPage() {
         <Reveal delay={60}>
           <H2>
             One of the deeper architectures emerging from this work is{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               SolaEiMara.
             </em>
           </H2>
@@ -632,7 +632,7 @@ export default function BookPage() {
                 >
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.8rem",
                       fontWeight: 300,
                       fontStyle: "italic",
@@ -647,7 +647,7 @@ export default function BookPage() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.62rem",
                       letterSpacing: "0.2em",
                       textTransform: "uppercase",
@@ -659,7 +659,7 @@ export default function BookPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.86rem",
                       lineHeight: 1.9,
                       color: "rgba(156,163,175,0.7)",
@@ -701,11 +701,11 @@ export default function BookPage() {
             <a
               href="/solaeimara"
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.72rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#F3EFE7",
+                color: "var(--ink)",
                 border: "1px solid rgba(200,139,90,0.4)",
                 padding: "0.9rem 1.8rem",
                 textDecoration: "none",
@@ -738,7 +738,7 @@ export default function BookPage() {
           <H2>
             If technology is becoming an extension of human cognition, intelligence
             cannot be treated only as{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
               extraction.
             </em>
           </H2>
@@ -786,7 +786,7 @@ export default function BookPage() {
 
         <Reveal delay={420}>
           <div style={{ marginTop: "3rem" }}>
-            <Eyebrow color="#C88B5A">Edoc'sil</Eyebrow>
+            <Eyebrow color="var(--gold)">Edoc'sil</Eyebrow>
           </div>
         </Reveal>
         <Reveal delay={460}>
@@ -865,10 +865,10 @@ export default function BookPage() {
               <Eyebrow>The Testament</Eyebrow>
               <div
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   lineHeight: 1.25,
                   marginBottom: "0.5rem",
                 }}
@@ -877,10 +877,10 @@ export default function BookPage() {
               </div>
               <div
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1rem",
                   fontStyle: "italic",
-                  color: "#9CA3AF",
+                  color: "var(--muted)",
                   marginBottom: "0.8rem",
                 }}
               >
@@ -888,7 +888,7 @@ export default function BookPage() {
               </div>
               <div
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.68rem",
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
@@ -911,7 +911,7 @@ export default function BookPage() {
           <H2>
             The book is not written from the position of mastery. It is written
             from{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>practice.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>practice.</em>
           </H2>
         </Reveal>
         <Reveal delay={120}>
@@ -969,7 +969,7 @@ export default function BookPage() {
         <Reveal delay={80}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.25rem, 2.6vw, 1.8rem)",
               fontStyle: "italic",
               fontWeight: 300,

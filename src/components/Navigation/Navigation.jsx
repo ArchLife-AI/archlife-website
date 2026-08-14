@@ -21,6 +21,8 @@ export function Nav() {
   const links = [
     { label: "Projects", href: "/#work" },
     { label: "Dental Labs", href: "/dental-labs" },
+    { label: "The Sensorium", href: "/sensorium" },
+    { label: "MANthan", href: "https://manthan.archlife.in", external: true },
     { label: "Canon", href: "/canon" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -91,6 +93,8 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               style={{
                 background: "none",
                 border: "none",
@@ -107,7 +111,7 @@ export function Nav() {
               onMouseEnter={(e) => (e.currentTarget.style.color = "#F3EFE7")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "#9CA3AF")}
             >
-              {l.label}
+              {l.label}{l.external && (<span aria-hidden="true" style={{ marginLeft: "0.3em", fontSize: "0.8em", color: "#C88B5A" }}>↗</span>)}
             </a>
           ))}
         </div>
@@ -187,6 +191,8 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               onClick={() => setMenuOpen(false)}
               style={{
                 background: "none",
@@ -202,7 +208,7 @@ export function Nav() {
                 padding: 0,
               }}
             >
-              {l.label}
+              {l.label}{l.external && (<span aria-hidden="true" style={{ marginLeft: "0.3em", fontSize: "0.8em", color: "#C88B5A" }}>↗</span>)}
             </a>
           ))}
         </div>

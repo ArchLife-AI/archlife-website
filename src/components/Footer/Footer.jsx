@@ -33,7 +33,7 @@ export function Footer() {
             color: "rgba(156,163,175,0.3)",
           }}
         >
-          Systems Architecture Initiative · archlife.in
+          Healthcare AI governance and operating systems · archlife.in
         </div>
         <a
           href="https://www.linkedin.com/in/dr-ishaan-wadhwa-98a017244"

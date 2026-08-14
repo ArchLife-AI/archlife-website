@@ -405,7 +405,7 @@ function LayerPanel({ id, onClose }) {
 
         <div
           style={{
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.58rem",
             letterSpacing: "0.24em",
             textTransform: "uppercase",
@@ -431,11 +431,11 @@ function LayerPanel({ id, onClose }) {
 
         <h2
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--serif)",
             fontSize: "clamp(2rem, 4vw, 3rem)",
             fontWeight: 300,
             lineHeight: 1.1,
-            color: "#F3EFE7",
+            color: "var(--ink)",
             margin: 0,
             marginBottom: "2rem",
             letterSpacing: "-0.01em",
@@ -447,12 +447,12 @@ function LayerPanel({ id, onClose }) {
         <PanelBlock label="Function">
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "1.15rem",
               fontStyle: "italic",
               fontWeight: 300,
               lineHeight: 1.6,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               margin: 0,
             }}
           >
@@ -463,7 +463,7 @@ function LayerPanel({ id, onClose }) {
         <PanelBlock label="Speaks in">
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.82rem",
               lineHeight: 1.8,
               color: "rgba(243,239,231,0.7)",
@@ -493,7 +493,7 @@ function LayerPanel({ id, onClose }) {
             marginTop: "3rem",
             paddingTop: "2rem",
             borderTop: "1px solid rgba(200,139,90,0.08)",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--sans)",
             fontSize: "0.6rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -519,11 +519,11 @@ function PanelBlock({ label, children }) {
     <div style={{ marginBottom: "2.4rem" }}>
       <div
         style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "var(--sans)",
           fontSize: "0.58rem",
           letterSpacing: "0.22em",
           textTransform: "uppercase",
-          color: "#9B5E45",
+          color: "var(--gold-deep)",
           marginBottom: "0.9rem",
         }}
       >
@@ -538,7 +538,7 @@ function PanelBody({ children }) {
   return (
     <p
       style={{
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "var(--sans)",
         fontSize: "0.85rem",
         lineHeight: 1.92,
         color: "rgba(243,239,231,0.7)",
@@ -644,7 +644,7 @@ function Strata({ onSelect, hoveredId, setHoveredId }) {
           >
             <span
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.65rem",
                 letterSpacing: "0.22em",
                 color: s.color,
@@ -663,10 +663,10 @@ function Strata({ onSelect, hoveredId, setHoveredId }) {
             >
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "clamp(1.15rem, 2.2vw, 1.4rem)",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   letterSpacing: "-0.005em",
                   lineHeight: 1.2,
                 }}
@@ -675,7 +675,7 @@ function Strata({ onSelect, hoveredId, setHoveredId }) {
               </span>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.74rem",
                   lineHeight: 1.7,
                   color: "rgba(156,163,175,0.65)",
@@ -687,7 +687,7 @@ function Strata({ onSelect, hoveredId, setHoveredId }) {
             </span>
             <span
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.18em",
                 color: "rgba(156,163,175,0.3)",
@@ -740,11 +740,11 @@ export default function SolaEiMaraPage() {
         <Reveal>
           <div
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.6rem",
               letterSpacing: "0.3em",
               textTransform: "uppercase",
-              color: "#9B5E45",
+              color: "var(--gold-deep)",
               marginBottom: "2.4rem",
             }}
           >
@@ -755,24 +755,24 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h1
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(3rem, 7vw, 5.6rem)",
               fontWeight: 300,
               lineHeight: 1.05,
               letterSpacing: "-0.02em",
-              color: "#F3EFE7",
+              color: "var(--ink)",
               margin: 0,
               marginBottom: "1.6rem",
             }}
           >
-            SolaEiMara<em style={{ color: "#C88B5A", fontStyle: "italic" }}>.</em>
+            SolaEiMara<em style={{ color: "var(--gold)", fontStyle: "italic" }}>.</em>
           </h1>
         </Reveal>
 
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.2rem, 2.4vw, 1.7rem)",
               fontStyle: "italic",
               fontWeight: 300,
@@ -808,7 +808,7 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: "1.8rem",
                     fontWeight: 300,
                     fontStyle: "italic",
@@ -821,7 +821,7 @@ export default function SolaEiMaraPage() {
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.6rem",
                     letterSpacing: "0.2em",
                     textTransform: "uppercase",
@@ -833,7 +833,7 @@ export default function SolaEiMaraPage() {
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.78rem",
                     lineHeight: 1.75,
                     color: "rgba(156,163,175,0.7)",
@@ -850,7 +850,7 @@ export default function SolaEiMaraPage() {
         <Reveal delay={280}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.88rem",
               lineHeight: 1.95,
               color: "rgba(156,163,175,0.75)",
@@ -869,7 +869,7 @@ export default function SolaEiMaraPage() {
         <Reveal delay={320}>
           <p
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "1.05rem",
               fontStyle: "italic",
               color: "rgba(200,139,90,0.6)",
@@ -886,11 +886,11 @@ export default function SolaEiMaraPage() {
           <a
             href="#architecture"
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.7rem",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#F3EFE7",
+              color: "var(--ink)",
               border: "1px solid rgba(200,139,90,0.4)",
               padding: "0.9rem 2rem",
               textDecoration: "none",
@@ -930,11 +930,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "3.5rem",
@@ -942,7 +942,7 @@ export default function SolaEiMaraPage() {
             }}
           >
             Five axioms hold the system{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>upright.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>upright.</em>
           </h2>
         </Reveal>
 
@@ -961,10 +961,10 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.6rem",
                     letterSpacing: "0.22em",
-                    color: "#9B5E45",
+                    color: "var(--gold-deep)",
                     width: 36,
                   }}
                 >
@@ -973,10 +973,10 @@ export default function SolaEiMaraPage() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "clamp(1.3rem, 2.6vw, 1.8rem)",
                       fontWeight: 300,
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       lineHeight: 1.25,
                       marginBottom: "0.8rem",
                       letterSpacing: "-0.005em",
@@ -986,7 +986,7 @@ export default function SolaEiMaraPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.86rem",
                       lineHeight: 1.9,
                       color: "rgba(156,163,175,0.65)",
@@ -1027,11 +1027,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "1.8rem",
@@ -1039,14 +1039,14 @@ export default function SolaEiMaraPage() {
             }}
           >
             Ten layers, from substrate to{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>crown.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>crown.</em>
           </h2>
         </Reveal>
 
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.86rem",
               lineHeight: 1.9,
               color: "rgba(156,163,175,0.65)",
@@ -1088,11 +1088,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "3.5rem",
@@ -1100,7 +1100,7 @@ export default function SolaEiMaraPage() {
             }}
           >
             What may move between layers — and what may{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>not.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>not.</em>
           </h2>
         </Reveal>
 
@@ -1114,11 +1114,11 @@ export default function SolaEiMaraPage() {
           <div>
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#C88B5A",
+                color: "var(--gold)",
                 marginBottom: "1.6rem",
               }}
             >
@@ -1134,11 +1134,11 @@ export default function SolaEiMaraPage() {
                 >
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.2rem",
                       fontWeight: 300,
                       fontStyle: "italic",
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       letterSpacing: "0.01em",
                       marginBottom: "0.6rem",
                     }}
@@ -1147,7 +1147,7 @@ export default function SolaEiMaraPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.8rem",
                       lineHeight: 1.85,
                       color: "rgba(156,163,175,0.6)",
@@ -1165,7 +1165,7 @@ export default function SolaEiMaraPage() {
           <div>
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
@@ -1185,11 +1185,11 @@ export default function SolaEiMaraPage() {
                 >
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.2rem",
                       fontWeight: 300,
                       fontStyle: "italic",
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       letterSpacing: "0.01em",
                       marginBottom: "0.6rem",
                     }}
@@ -1198,7 +1198,7 @@ export default function SolaEiMaraPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.8rem",
                       lineHeight: 1.85,
                       color: "rgba(156,163,175,0.6)",
@@ -1233,11 +1233,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "3.5rem",
@@ -1245,7 +1245,7 @@ export default function SolaEiMaraPage() {
             }}
           >
             Three protocols hold the system through{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>weather.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>weather.</em>
           </h2>
         </Reveal>
 
@@ -1268,11 +1268,11 @@ export default function SolaEiMaraPage() {
               <NaHzHaRCycle />
               <div
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.58rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#9B5E45",
+                  color: "var(--gold-deep)",
                   marginBottom: "0.8rem",
                   textAlign: "center",
                 }}
@@ -1281,10 +1281,10 @@ export default function SolaEiMaraPage() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1.6rem",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   marginBottom: "1rem",
                   textAlign: "center",
                   letterSpacing: "-0.005em",
@@ -1294,7 +1294,7 @@ export default function SolaEiMaraPage() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "0.95rem",
                   fontStyle: "italic",
                   color: "rgba(243,239,231,0.6)",
@@ -1310,11 +1310,11 @@ export default function SolaEiMaraPage() {
                   <div key={p.name}>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.66rem",
                         letterSpacing: "0.16em",
                         textTransform: "uppercase",
-                        color: "#C88B5A",
+                        color: "var(--gold)",
                         marginBottom: "0.2rem",
                       }}
                     >
@@ -1322,7 +1322,7 @@ export default function SolaEiMaraPage() {
                     </div>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.74rem",
                         lineHeight: 1.7,
                         color: "rgba(156,163,175,0.6)",
@@ -1347,11 +1347,11 @@ export default function SolaEiMaraPage() {
               <div style={{ height: 140, marginBottom: "1.4rem" }} />
               <div
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.58rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#9B5E45",
+                  color: "var(--gold-deep)",
                   marginBottom: "0.8rem",
                   textAlign: "center",
                 }}
@@ -1360,10 +1360,10 @@ export default function SolaEiMaraPage() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1.6rem",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   marginBottom: "1rem",
                   textAlign: "center",
                   letterSpacing: "-0.005em",
@@ -1373,7 +1373,7 @@ export default function SolaEiMaraPage() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "0.9rem",
                   fontStyle: "italic",
                   color: "rgba(243,239,231,0.55)",
@@ -1389,7 +1389,7 @@ export default function SolaEiMaraPage() {
                   <div key={s.n}>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.66rem",
                         letterSpacing: "0.16em",
                         color: "#6E8E89",
@@ -1400,7 +1400,7 @@ export default function SolaEiMaraPage() {
                     </div>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.74rem",
                         lineHeight: 1.7,
                         color: "rgba(156,163,175,0.6)",
@@ -1420,11 +1420,11 @@ export default function SolaEiMaraPage() {
               <div style={{ height: 140, marginBottom: "1.4rem" }} />
               <div
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.58rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#9B5E45",
+                  color: "var(--gold-deep)",
                   marginBottom: "0.8rem",
                   textAlign: "center",
                 }}
@@ -1433,10 +1433,10 @@ export default function SolaEiMaraPage() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1.6rem",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   marginBottom: "1rem",
                   textAlign: "center",
                   letterSpacing: "-0.005em",
@@ -1446,7 +1446,7 @@ export default function SolaEiMaraPage() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "0.9rem",
                   fontStyle: "italic",
                   color: "rgba(243,239,231,0.55)",
@@ -1462,7 +1462,7 @@ export default function SolaEiMaraPage() {
                   <div key={d.name}>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.66rem",
                         letterSpacing: "0.14em",
                         color: "#5C7B91",
@@ -1473,7 +1473,7 @@ export default function SolaEiMaraPage() {
                     </div>
                     <div
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "var(--sans)",
                         fontSize: "0.74rem",
                         lineHeight: 1.7,
                         color: "rgba(156,163,175,0.6)",
@@ -1489,7 +1489,7 @@ export default function SolaEiMaraPage() {
                   marginTop: "1.6rem",
                   paddingTop: "1.2rem",
                   borderTop: "1px solid rgba(200,80,60,0.18)",
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontStyle: "italic",
                   fontSize: "0.85rem",
                   lineHeight: 1.7,
@@ -1532,24 +1532,24 @@ export default function SolaEiMaraPage() {
             <div>
               <h2
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
                   fontWeight: 300,
                   lineHeight: 1.12,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   letterSpacing: "-0.01em",
                   marginBottom: "1.8rem",
                 }}
               >
                 The architecture was not designed in{" "}
-                <em style={{ color: "#C88B5A", fontStyle: "italic" }}>comfort.</em>
+                <em style={{ color: "var(--gold)", fontStyle: "italic" }}>comfort.</em>
               </h2>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.88rem",
                   lineHeight: 1.95,
-                  color: "#9CA3AF",
+                  color: "var(--muted)",
                   fontWeight: 300,
                   marginBottom: "1.4rem",
                 }}
@@ -1561,7 +1561,7 @@ export default function SolaEiMaraPage() {
               </p>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.84rem",
                   lineHeight: 1.9,
                   color: "rgba(156,163,175,0.55)",
@@ -1577,11 +1577,11 @@ export default function SolaEiMaraPage() {
             <div>
               <div
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.6rem",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#C88B5A",
+                  color: "var(--gold)",
                   marginBottom: "1rem",
                 }}
               >
@@ -1589,11 +1589,11 @@ export default function SolaEiMaraPage() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1.8rem",
                   fontWeight: 300,
                   fontStyle: "italic",
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   lineHeight: 1.3,
                   marginBottom: "1.2rem",
                   letterSpacing: "-0.005em",
@@ -1603,7 +1603,7 @@ export default function SolaEiMaraPage() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "var(--sans)",
                   fontSize: "0.84rem",
                   lineHeight: 1.9,
                   color: "rgba(156,163,175,0.65)",
@@ -1619,7 +1619,7 @@ export default function SolaEiMaraPage() {
                 style={{
                   paddingLeft: "1.2rem",
                   borderLeft: "1px solid rgba(200,139,90,0.3)",
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontStyle: "italic",
                   fontSize: "1.05rem",
                   lineHeight: 1.75,
@@ -1654,11 +1654,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "1.4rem",
@@ -1666,14 +1666,14 @@ export default function SolaEiMaraPage() {
             }}
           >
             Eros moves the system through{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>weather.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>weather.</em>
           </h2>
         </Reveal>
 
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.86rem",
               lineHeight: 1.9,
               color: "rgba(156,163,175,0.65)",
@@ -1709,7 +1709,7 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.6rem",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
@@ -1733,10 +1733,10 @@ export default function SolaEiMaraPage() {
                 </div>
                 <h3
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: "1.5rem",
                     fontWeight: 300,
-                    color: "#F3EFE7",
+                    color: "var(--ink)",
                     marginBottom: "0.5rem",
                     letterSpacing: "-0.005em",
                   }}
@@ -1745,7 +1745,7 @@ export default function SolaEiMaraPage() {
                 </h3>
                 <div
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: "0.95rem",
                     fontStyle: "italic",
                     color: "rgba(243,239,231,0.55)",
@@ -1756,7 +1756,7 @@ export default function SolaEiMaraPage() {
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.62rem",
                     letterSpacing: "0.12em",
                     color: "rgba(156,163,175,0.45)",
@@ -1768,7 +1768,7 @@ export default function SolaEiMaraPage() {
                 </div>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.76rem",
                     lineHeight: 1.85,
                     color: "rgba(156,163,175,0.65)",
@@ -1794,11 +1794,11 @@ export default function SolaEiMaraPage() {
           >
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#9B5E45",
+                color: "var(--gold-deep)",
                 marginBottom: "1rem",
               }}
             >
@@ -1806,10 +1806,10 @@ export default function SolaEiMaraPage() {
             </div>
             <h3
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--serif)",
                 fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
                 fontWeight: 300,
-                color: "#F3EFE7",
+                color: "var(--ink)",
                 lineHeight: 1.25,
                 marginBottom: "1.4rem",
                 letterSpacing: "-0.005em",
@@ -1819,7 +1819,7 @@ export default function SolaEiMaraPage() {
             </h3>
             <p
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.86rem",
                 lineHeight: 1.95,
                 color: "rgba(156,163,175,0.7)",
@@ -1838,7 +1838,7 @@ export default function SolaEiMaraPage() {
               style={{
                 paddingLeft: "1.2rem",
                 borderLeft: "1px solid rgba(200,139,90,0.3)",
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: "var(--serif)",
                 fontStyle: "italic",
                 fontSize: "1.1rem",
                 lineHeight: 1.7,
@@ -1871,11 +1871,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "1.4rem",
@@ -1883,14 +1883,14 @@ export default function SolaEiMaraPage() {
             }}
           >
             Five thinkers, each assigned to a{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>layer.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>layer.</em>
           </h2>
         </Reveal>
 
         <Reveal delay={120}>
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "var(--sans)",
               fontSize: "0.86rem",
               lineHeight: 1.9,
               color: "rgba(156,163,175,0.65)",
@@ -1927,11 +1927,11 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.58rem",
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
-                    color: "#9B5E45",
+                    color: "var(--gold-deep)",
                     marginBottom: "0.8rem",
                   }}
                 >
@@ -1939,11 +1939,11 @@ export default function SolaEiMaraPage() {
                 </div>
                 <h3
                   style={{
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "var(--serif)",
                     fontSize: f.larger ? "1.6rem" : "1.4rem",
                     fontWeight: 300,
                     fontStyle: "italic",
-                    color: "#F3EFE7",
+                    color: "var(--ink)",
                     marginBottom: "1rem",
                     letterSpacing: "-0.005em",
                   }}
@@ -1952,7 +1952,7 @@ export default function SolaEiMaraPage() {
                 </h3>
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.78rem",
                     lineHeight: 1.85,
                     color: "rgba(156,163,175,0.65)",
@@ -1985,11 +1985,11 @@ export default function SolaEiMaraPage() {
         <Reveal delay={60}>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(2rem, 4.5vw, 3.4rem)",
               fontWeight: 300,
               lineHeight: 1.12,
-              color: "#F3EFE7",
+              color: "var(--ink)",
               letterSpacing: "-0.01em",
               marginTop: "0.6rem",
               marginBottom: "3rem",
@@ -1997,7 +1997,7 @@ export default function SolaEiMaraPage() {
             }}
           >
             How the architecture survives — and where it{" "}
-            <em style={{ color: "#C88B5A", fontStyle: "italic" }}>doesn't.</em>
+            <em style={{ color: "var(--gold)", fontStyle: "italic" }}>doesn't.</em>
           </h2>
         </Reveal>
 
@@ -2011,11 +2011,11 @@ export default function SolaEiMaraPage() {
           <div>
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#C88B5A",
+                color: "var(--gold)",
                 marginBottom: "1.6rem",
               }}
             >
@@ -2034,7 +2034,7 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.55rem",
                     color: "rgba(155,94,69,0.5)",
                     letterSpacing: "0.18em",
@@ -2047,11 +2047,11 @@ export default function SolaEiMaraPage() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.1rem",
                       fontWeight: 300,
                       fontStyle: "italic",
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       marginBottom: "0.4rem",
                     }}
                   >
@@ -2059,7 +2059,7 @@ export default function SolaEiMaraPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.8rem",
                       lineHeight: 1.8,
                       color: "rgba(156,163,175,0.6)",
@@ -2076,7 +2076,7 @@ export default function SolaEiMaraPage() {
           <div>
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
@@ -2099,7 +2099,7 @@ export default function SolaEiMaraPage() {
               >
                 <div
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "var(--sans)",
                     fontSize: "0.55rem",
                     color: "rgba(200,80,60,0.45)",
                     letterSpacing: "0.18em",
@@ -2112,11 +2112,11 @@ export default function SolaEiMaraPage() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cormorant Garamond', serif",
+                      fontFamily: "var(--serif)",
                       fontSize: "1.1rem",
                       fontWeight: 300,
                       fontStyle: "italic",
-                      color: "#F3EFE7",
+                      color: "var(--ink)",
                       marginBottom: "0.4rem",
                     }}
                   >
@@ -2124,7 +2124,7 @@ export default function SolaEiMaraPage() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "var(--sans)",
                       fontSize: "0.8rem",
                       lineHeight: 1.8,
                       color: "rgba(156,163,175,0.6)",
@@ -2152,11 +2152,11 @@ export default function SolaEiMaraPage() {
           >
             <div
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "var(--sans)",
                 fontSize: "0.6rem",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#9B5E45",
+                color: "var(--gold-deep)",
                 marginBottom: "1.4rem",
               }}
             >
@@ -2168,7 +2168,7 @@ export default function SolaEiMaraPage() {
                 style={{
                   padding: "1.1rem 0",
                   borderTop: "1px solid rgba(200,139,90,0.05)",
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: "var(--serif)",
                   fontSize: "1.05rem",
                   fontStyle: "italic",
                   fontWeight: 300,
@@ -2210,7 +2210,7 @@ export default function SolaEiMaraPage() {
         <Reveal delay={80}>
           <blockquote
             style={{
-              fontFamily: "'Cormorant Garamond', serif",
+              fontFamily: "var(--serif)",
               fontSize: "clamp(1.3rem, 2.8vw, 1.9rem)",
               fontWeight: 300,
               fontStyle: "italic",

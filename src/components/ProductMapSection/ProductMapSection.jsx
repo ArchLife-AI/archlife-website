@@ -39,12 +39,23 @@ const offerings = [
     href: "/sensorium",
     action: "Explore the project",
   },
+  {
+    title: "MANthan",
+    status: "Live interactive experience",
+    category: "Living therapy",
+    description:
+      "Living therapy sessions in the Sensorium's central hall — the interactive experience of The Builder and The Architect.",
+    href: "https://manthan.archlife.in",
+    action: "Open MANthan",
+    external: true,
+  },
 ];
 
 const routes = [
   { label: "Healthcare AI governance", href: "https://mirror.archlife.in", external: true },
   { label: "Dental lab operations", href: "/dental-labs" },
   { label: "Intentional listening", href: "/sensorium" },
+  { label: "Living therapy", href: "https://manthan.archlife.in", external: true },
   { label: "Research foundations", href: "/canon" },
   { label: "Partnerships", href: "/contact" },
 ];

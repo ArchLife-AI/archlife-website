@@ -12,6 +12,11 @@ export const meta = () => [
   },
 ];
 
+const fonts = {
+  sans: "var(--sans)",
+  serif: "var(--serif)",
+};
+
 const inquiryRoutes = [
   {
     label: "Healthcare AI governance",
@@ -69,12 +74,12 @@ export default function ContactPage() {
             <Reveal delay={90}>
               <h1
                 style={{
-                  fontFamily: "'Cormorant Garamond', serif",
+                  fontFamily: fonts.serif,
                   fontSize: "clamp(2.5rem,6vw,5.5rem)",
                   fontWeight: 300,
-                  color: "#F3EFE7",
+                  color: "var(--ink)",
                   lineHeight: 0.96,
-                  margin: "0 0 1.5rem",
+                  margin: "0 0 var(--space-4)",
                   letterSpacing: 0,
                 }}
               >
@@ -84,12 +89,12 @@ export default function ContactPage() {
             <Reveal delay={160}>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: fonts.sans,
                   fontSize: "0.95rem",
                   lineHeight: 1.9,
                   color: "#A8B0B9",
                   maxWidth: 520,
-                  margin: "0 0 2rem",
+                  margin: "0 0 var(--space-4)",
                   fontWeight: 300,
                 }}
               >
@@ -102,12 +107,12 @@ export default function ContactPage() {
             <Reveal delay={190}>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: fonts.sans,
                   fontSize: "0.74rem",
                   lineHeight: 1.7,
                   color: "rgba(216,222,230,0.62)",
                   maxWidth: 520,
-                  margin: "0 0 1.5rem",
+                  margin: "0 0 var(--space-4)",
                   fontWeight: 300,
                 }}
               >
@@ -127,7 +132,7 @@ export default function ContactPage() {
               >
                 <p
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: fonts.sans,
                     color: "#D8DEE6",
                     fontSize: "0.78rem",
                     lineHeight: 1.8,
@@ -148,7 +153,7 @@ export default function ContactPage() {
                 style={{
                   display: "inline-block",
                   marginTop: "1.25rem",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: fonts.sans,
                   color: "rgba(243,239,231,0.72)",
                   fontSize: "0.76rem",
                   lineHeight: 1.5,
@@ -159,7 +164,7 @@ export default function ContactPage() {
                   transition: "color 220ms ease, border-color 220ms ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = "#F3EFE7";
+                  e.currentTarget.style.color = "var(--ink)";
                   e.currentTarget.style.borderBottomColor =
                     "rgba(200,139,90,0.68)";
                 }}
@@ -178,7 +183,7 @@ export default function ContactPage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-              gap: "1rem",
+              gap: "var(--space-2)",
             }}
             className="contact-route-card-grid"
           >
@@ -192,7 +197,7 @@ export default function ContactPage() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    gap: "1.5rem",
+                    gap: "var(--space-3)",
                     padding: "1.35rem",
                     textDecoration: "none",
                     border: "1px solid rgba(156,163,175,0.16)",
@@ -225,7 +230,7 @@ export default function ContactPage() {
                         borderRadius: 6,
                         border: "1px solid rgba(200,139,90,0.32)",
                         color: "#D8A477",
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: fonts.sans,
                         fontSize: "0.68rem",
                         lineHeight: 1.2,
                         letterSpacing: 0,
@@ -236,10 +241,10 @@ export default function ContactPage() {
                     </span>
                     <h2
                       style={{
-                        fontFamily: "'Cormorant Garamond', serif",
+                        fontFamily: fonts.serif,
                         fontSize: "clamp(1.55rem,2.4vw,2.35rem)",
                         fontWeight: 300,
-                        color: "#F3EFE7",
+                        color: "var(--ink)",
                         lineHeight: 1.05,
                         margin: "1.2rem 0 0.8rem",
                         letterSpacing: 0,
@@ -249,8 +254,8 @@ export default function ContactPage() {
                     </h2>
                     <p
                       style={{
-                        fontFamily: "'Inter', sans-serif",
-                        color: "#9CA3AF",
+                        fontFamily: fonts.sans,
+                        color: "var(--muted)",
                         fontSize: "0.8rem",
                         lineHeight: 1.75,
                         margin: 0,
@@ -262,8 +267,8 @@ export default function ContactPage() {
                   </div>
                   <span
                     style={{
-                      fontFamily: "'Inter', sans-serif",
-                      color: "#F3EFE7",
+                      fontFamily: fonts.sans,
+                      color: "var(--ink)",
                       fontSize: "0.74rem",
                       lineHeight: 1.4,
                       textTransform: "uppercase",
