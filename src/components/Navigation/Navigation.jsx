@@ -22,7 +22,7 @@ export function Nav() {
     { label: "Projects", href: "/#work" },
     { label: "Dental Labs", href: "/dental-labs" },
     { label: "The Sensorium", href: "/sensorium" },
-    { label: "MANthan", href: "https://manthan.archlife.in", external: true },
+    { label: "MANthan", href: "/manthan" },
     { label: "Canon", href: "/canon" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

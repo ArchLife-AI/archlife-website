@@ -13,6 +13,7 @@ const INTERNAL_ROUTES = new Set([
   '/dental-labs',
   '/healthcare',
   '/institutional-mirror',
+  '/manthan',
   '/medevolv',
   '/sensorium',
   '/solaeimara',
@@ -33,7 +34,7 @@ describe('navigation links', () => {
     const manthanLinks = screen.getAllByRole('link', { name: /MANthan/ });
     expect(manthanLinks.length).toBeGreaterThan(0);
     for (const link of manthanLinks) {
-      expect(link.getAttribute('href')).toBe('https://manthan.archlife.in');
+      expect(link.getAttribute('href')).toBe('/manthan');
     }
     const sensoriumLinks = screen.getAllByRole('link', { name: /The Sensorium/ });
     expect(sensoriumLinks.length).toBeGreaterThan(0);

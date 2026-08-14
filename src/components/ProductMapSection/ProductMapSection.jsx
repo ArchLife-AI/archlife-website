@@ -55,7 +55,7 @@ const routes = [
   { label: "Healthcare AI governance", href: "https://mirror.archlife.in", external: true },
   { label: "Dental lab operations", href: "/dental-labs" },
   { label: "Intentional listening", href: "/sensorium" },
-  { label: "Living therapy", href: "https://manthan.archlife.in", external: true },
+  { label: "Living therapy", href: "/manthan" },
   { label: "Research foundations", href: "/canon" },
   { label: "Partnerships", href: "/contact" },
 ];

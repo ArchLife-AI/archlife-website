@@ -26,6 +26,7 @@ const PUBLIC_CANONICAL_PATHS = [
   '/dental-labs',
   '/healthcare',
   '/institutional-mirror',
+  '/manthan',
   '/medevolv',
   '/sensorium',
   '/solaeimara',
