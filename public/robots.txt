@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /__create/
 Disallow: /errors/
 
 Sitemap: https://archlife.in/sitemap.xml
