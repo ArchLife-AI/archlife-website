@@ -6,4 +6,4 @@
 /build/
 
 .vercel
-".vitest/"  
+.vitest/  
