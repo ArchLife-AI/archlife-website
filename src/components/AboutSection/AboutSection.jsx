@@ -108,7 +108,7 @@ export function AboutSection() {
           {/* No box — photo sits directly in the flow */}
           <div>
             <img
-              src="https://dtvoeevhaseb5.cloudfront.net/user-uploads/4d540347-1e99-47f1-96c6-e7e01ef97024.jpg"
+              src="/founder-painting.jpg"
               alt="Dr. Ishaan Wadhwa"
               style={{
                 width: "100%",

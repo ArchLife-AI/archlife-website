@@ -2,7 +2,7 @@ import { Reveal } from "@/components/Reveal/Reveal";
 import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
 
 // Upload the painting via the app and replace this URL
-const BUILDER_PAINTING_URL = "https://dtvoeevhaseb5.cloudfront.net/user-uploads/b0bcbb41-787e-4371-9d7d-88ad7ea72424.png";
+const BUILDER_PAINTING_URL = "/builder-painting.webp";
 
 const PAINTING_READY = BUILDER_PAINTING_URL !== "PASTE_CLOUDFRONT_URL_HERE";
 
@@ -241,7 +241,7 @@ export function BuilderArchitectSection() {
           className="book-feature"
         >
           <img
-            src="https://dtvoeevhaseb5.cloudfront.net/user-uploads/4c9e5e73-63c8-4ab9-b7ee-80d0d73f6505.jpg"
+            src="/architect-painting.jpg"
             alt="The Builder and The Architect"
             style={{
               width: "min(180px, 38vw)",
