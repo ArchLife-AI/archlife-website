@@ -4,15 +4,14 @@ import { SmoothScroll } from '@/components/SmoothScroll/SmoothScroll';
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 1000 * 60 * 5, // 5 minutes
-      cacheTime: 1000 * 60 * 30, // 30 minutes
+      staleTime: 1000 * 60 * 5,
       retry: 1,
       refetchOnWindowFocus: false,
     },
   },
 });
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
   return (
     <QueryClientProvider client={queryClient}>
       <SmoothScroll />

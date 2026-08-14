@@ -60,7 +60,7 @@ export function Nav() {
         }}
       >
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="ArchLife"
           style={{
             width: 34,

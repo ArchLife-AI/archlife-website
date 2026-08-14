@@ -125,7 +125,7 @@ export function AtmosphericCanvas() {
         }}
       >
         <img
-          src="https://wallpapers.com/images/high/icarus-falling-from-the-sky-3x645ehu11f9loaf.webp"
+          src="/icarus.webp"
           alt=""
           aria-hidden="true"
           style={{
