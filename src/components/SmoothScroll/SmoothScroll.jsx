@@ -16,9 +16,15 @@ export function SmoothScroll() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
     const isTouchPrimary = window.matchMedia(
       "(hover: none) and (pointer: coarse)",
     ).matches;
+
+    if (prefersReducedMotion) return;
 
     const lenis = new Lenis({
       duration: 1.15,
