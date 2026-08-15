@@ -20,6 +20,8 @@ const PUBLIC_CANONICAL_PATHS = [
   '/',
   '/about',
   '/articles',
+  '/articles/four-gaps',
+  '/articles/delhi-declaration',
   '/book',
   '/canon',
   '/contact',

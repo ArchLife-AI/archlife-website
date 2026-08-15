@@ -7,6 +7,8 @@ const INTERNAL_ROUTES = new Set([
   '/',
   '/about',
   '/articles',
+  '/articles/four-gaps',
+  '/articles/delhi-declaration',
   '/book',
   '/canon',
   '/canon/architecture-of-return',
