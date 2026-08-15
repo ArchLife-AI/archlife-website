@@ -63,6 +63,37 @@ export function ManifestoSection() {
             must also become the future of care."
           </p>
         </Reveal>
+
+        <Reveal delay={550}>
+          <a
+            href="/manifesto"
+            style={{
+              fontFamily: "var(--sans)",
+              fontSize: "0.7rem",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--gold)",
+              textDecoration: "none",
+              borderBottom: "1px solid rgba(200,139,90,0.35)",
+              paddingBottom: 3,
+              display: "inline-block",
+              marginTop: "0.5rem",
+              transition: "color 0.3s ease, border-color 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#F3EFE7";
+              e.currentTarget.style.borderBottomColor =
+                "rgba(200,139,90,0.7)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "var(--gold)";
+              e.currentTarget.style.borderBottomColor =
+                "rgba(200,139,90,0.35)";
+            }}
+          >
+            Read the full manifesto →
+          </a>
+        </Reveal>
       </div>
     </section>
   );

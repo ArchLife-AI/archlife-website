@@ -30,6 +30,18 @@ const PUBLIC_CANONICAL_PATHS = [
   '/medevolv',
   '/sensorium',
   '/solaeimara',
+  '/manifesto',
+  '/canon/architecture-of-return',
+  '/canon/ascent-without-feedback',
+  '/canon/before-notice',
+  '/canon/dialectical-self',
+  '/canon/elder-brother-problem',
+  '/canon/icarus',
+  '/canon/labour-of-becoming-real',
+  '/canon/machine-constitution',
+  '/canon/spirituality-as-an-abstract-boat',
+  '/canon/ubermensch-and-aniruddha',
+  '/canon/when-intelligence-becomes-a-utility',
 ];
 
 function useCanonicalHref() {

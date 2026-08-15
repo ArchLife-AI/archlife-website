@@ -1451,21 +1451,77 @@ export default function CanonPage() {
           <Reveal delay={120}>
             <div>
               {[
+                {
+                  label: "The Icarus Problem",
+                  sub: "On systems that fail to notice",
+                  href: "/canon/icarus",
+                },
+                {
+                  label: "Ascent Without Feedback",
+                  sub: "When growth outruns the systems that hold it",
+                  href: "/canon/ascent-without-feedback",
+                },
+                {
+                  label: "The Architecture of Return",
+                  sub: "On repair, belonging, and systems that receive people back",
+                  href: "/canon/architecture-of-return",
+                },
+                {
+                  label: "The Elder Brother Problem",
+                  sub: "The hidden wound of the one who stayed",
+                  href: "/canon/elder-brother-problem",
+                },
+                {
+                  label: "The Labour of Becoming Real",
+                  sub: "Identity rupture, and the self rebuilt through love and labour",
+                  href: "/canon/labour-of-becoming-real",
+                },
+                {
+                  label: "When Intelligence Becomes a Utility",
+                  sub: "Commodified intelligence and who gets to think",
+                  href: "/canon/when-intelligence-becomes-a-utility",
+                },
+                {
+                  label: "The Dialectical Self",
+                  sub: "Radical acceptance, two-sided truths, and becoming whole without becoming rigid",
+                  href: "/canon/dialectical-self",
+                },
+                {
+                  label: "Ubermensch and Aniruddha",
+                  sub: "The kind of strength that does not need to dominate",
+                  href: "/canon/ubermensch-and-aniruddha",
+                },
+                {
+                  label: "Spirituality as an Abstract Boat",
+                  sub: "What carries us when intellect is not enough",
+                  href: "/canon/spirituality-as-an-abstract-boat",
+                },
+                {
+                  label: "Before Notice",
+                  sub: "How NHHR became NaHzHaR, and why Heidegger changed the first step",
+                  href: "/canon/before-notice",
+                },
+                {
+                  label: "The Machine's Constitution and the Human Person",
+                  sub: "Babel, Nehemiah, and the Builder and Architect reading Claude's Constitution",
+                  href: "/canon/machine-constitution",
+                },
                 { label: "Founder Notes", sub: "Origin journals · 2019—" },
                 { label: "Mythopoetic Maps", sub: "Symbolic architectures" },
                 { label: "Reflective Diaries", sub: "Continuity through crisis" },
                 { label: "Letter to Institutions", sub: "Foundational essays" },
-              ].map((item, i) => (
-                <div
-                  key={item.label}
-                  style={{
-                    padding: "1.4rem 0",
-                    borderTop: "1px solid rgba(200,139,90,0.07)",
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "1.2rem",
-                  }}
-                >
+              ].map((item, i) => {
+                const rowStyle = {
+                  padding: "1.4rem 0",
+                  borderTop: "1px solid rgba(200,139,90,0.07)",
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "1.2rem",
+                  textDecoration: "none",
+                  color: "inherit",
+                  transition: "background 0.35s ease",
+                };
+                const numEl = (
                   <span
                     style={{
                       fontFamily: "var(--sans)",
@@ -1478,31 +1534,76 @@ export default function CanonPage() {
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
+                );
+                const labelEl = (
                   <span
                     style={{
                       fontFamily: "var(--serif)",
                       fontSize: "1.15rem",
                       fontWeight: 300,
-                      color: "rgba(243,239,231,0.7)",
+                      color: item.href
+                        ? "rgba(243,239,231,0.92)"
+                        : "rgba(243,239,231,0.7)",
                       fontStyle: "italic",
                       flex: 1,
                     }}
                   >
                     {item.label}
                   </span>
+                );
+                const subEl = (
                   <span
                     style={{
                       fontFamily: "var(--sans)",
                       fontSize: "0.62rem",
                       letterSpacing: "0.12em",
-                      color: "rgba(156,163,175,0.35)",
+                      color: item.href
+                        ? "rgba(200,139,90,0.7)"
+                        : "rgba(156,163,175,0.35)",
                       textTransform: "uppercase",
                     }}
                   >
-                    {item.sub}
+                    {item.href ? "Read →" : item.sub}
                   </span>
-                </div>
-              ))}
+                );
+                if (item.href) {
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      style={rowStyle}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.background =
+                          "rgba(200,139,90,0.04)")
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.background = "transparent")
+                      }
+                    >
+                      {numEl}
+                      {labelEl}
+                      {subEl}
+                    </a>
+                  );
+                }
+                return (
+                  <div key={item.label} style={rowStyle}>
+                    {numEl}
+                    {labelEl}
+                    <span
+                      style={{
+                        fontFamily: "var(--sans)",
+                        fontSize: "0.62rem",
+                        letterSpacing: "0.12em",
+                        color: "rgba(156,163,175,0.35)",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      {item.sub}
+                    </span>
+                  </div>
+                );
+              })}
               <div
                 style={{
                   borderTop: "1px solid rgba(200,139,90,0.07)",
