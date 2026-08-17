@@ -2,6 +2,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build/client",
   "framework": null,
+  "redirects": [
+    {
+      "source": "/thesensorium",
+      "destination": "https://thesensorium.archlife.in",
+      "permanent": true
+    },
+    {
+      "source": "/thesensorium/",
+      "destination": "https://thesensorium.archlife.in",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },

@@ -221,7 +221,7 @@ export function HealthcareSection() {
                 }}
               >
                 <a
-                  href="https://hospital-simulator-eta.vercel.app"
+                  href="https://mirror.archlife.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -239,7 +239,7 @@ export function HealthcareSection() {
                     (e.currentTarget.style.color = "rgba(156,163,175,0.45)")
                   }
                 >
-                  hospital-simulator-eta.vercel.app
+                  mirror.archlife.in
                 </a>
                 <span
                   style={{

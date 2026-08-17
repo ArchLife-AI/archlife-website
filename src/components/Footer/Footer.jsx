@@ -81,7 +81,7 @@ export function Footer() {
             textTransform: "uppercase",
           }}
         >
-          CIN: pending
+          CIN: U62020DC2026PTC472434
         </div>
       </footer>
     </>

@@ -1,7 +1,13 @@
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { Nav } from '@/components/Navigation/Navigation';
 import { Footer } from '@/components/Footer/Footer';
+import { HealthcareSection } from '@/components/HealthcareSection/HealthcareSection';
+
+const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '../..');
 
 const INTERNAL_ROUTES = new Set([
   '/',
@@ -90,6 +96,68 @@ describe('navigation links', () => {
     );
     const html = document.body.innerHTML;
     expect(html).not.toMatch(/fontawesome|ka-p\.|fonts\.googleapis|wallpapers\.com/);
+  });
+
+  it('prints the incorporated CIN and not pending', () => {
+    render(<Footer />);
+    expect(screen.getByText(/CIN:\s*U62020DC2026PTC472434/i)).toBeTruthy();
+    expect(document.body.textContent).not.toMatch(/CIN:\s*pending/i);
+  });
+});
+
+describe('healthcare CTA', () => {
+  it('points Institutional Mirror at mirror.archlife.in', () => {
+    if (typeof globalThis.IntersectionObserver === 'undefined') {
+      globalThis.IntersectionObserver = class {
+        observe() {}
+        unobserve() {}
+        disconnect() {}
+      };
+    }
+    render(<HealthcareSection />);
+    const mirrorLinks = screen
+      .getAllByRole('link')
+      .filter((link) => (link.getAttribute('href') || '').includes('mirror.archlife.in'));
+    expect(mirrorLinks.length).toBeGreaterThan(0);
+    for (const link of mirrorLinks) {
+      expect(link.getAttribute('href')).toBe('https://mirror.archlife.in');
+    }
+    expect(document.body.innerHTML).not.toMatch(/hospital-simulator-eta\.vercel\.app/);
+  });
+});
+
+describe('estate redirects and landings', () => {
+  it('redirects /thesensorium to the Sensorium runtime', () => {
+    const vercel = JSON.parse(readFileSync(join(repoRoot, 'vercel.json'), 'utf8'));
+    const destinations = (vercel.redirects || [])
+      .filter((rule) => rule.source === '/thesensorium' || rule.source === '/thesensorium/')
+      .map((rule) => rule.destination);
+    expect(destinations.length).toBeGreaterThan(0);
+    for (const destination of destinations) {
+      expect(destination).toBe('https://thesensorium.archlife.in');
+    }
+  });
+
+  it('keeps /manthan as a landing rewrite, not a paywall', () => {
+    const vercel = JSON.parse(readFileSync(join(repoRoot, 'vercel.json'), 'utf8'));
+    const manthanRedirects = (vercel.redirects || []).filter((rule) =>
+      String(rule.source).startsWith('/manthan')
+    );
+    expect(manthanRedirects).toEqual([]);
+    expect(vercel.rewrites.some((rule) => rule.source === '/manthan')).toBe(true);
+    const manthanPage = readFileSync(join(repoRoot, 'src/app/manthan/page.jsx'), 'utf8');
+    expect(manthanPage).toMatch(/never pays/);
+    expect(manthanPage).toMatch('https://manthan.archlife.in');
+  });
+
+  it('keeps prefers-reduced-motion', () => {
+    const css = readFileSync(join(repoRoot, 'src/app/global.css'), 'utf8');
+    expect(css).toMatch(/prefers-reduced-motion:\s*reduce/);
+    const smoothScroll = readFileSync(
+      join(repoRoot, 'src/components/SmoothScroll/SmoothScroll.jsx'),
+      'utf8'
+    );
+    expect(smoothScroll).toMatch(/prefers-reduced-motion:\s*reduce/);
   });
 });
 
