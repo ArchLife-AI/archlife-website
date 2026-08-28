@@ -76,6 +76,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function HydrateFallback() {
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'var(--bg, #0d0f12)',
+        color: 'var(--ink, #f3efe7)',
+      }}
+      aria-busy="true"
+    />
+  );
+}
+
 export default function App() {
   return <Outlet />;
 }

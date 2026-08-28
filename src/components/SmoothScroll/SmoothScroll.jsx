@@ -9,8 +9,9 @@ import Snap from "lenis/snap";
  * - Snap: when the user stops within ~30% of viewport height from a <section>
  *   boundary, gently glides them into alignment. If they keep scrolling, no snap.
  *   This is "proximity" snapping — assists rather than forces.
- * - Touch devices: Lenis disabled (iOS Safari native inertia is silky and
- *   intercepting it causes address-bar jitter).
+ * - Touch devices: do not construct Lenis. Creating it and then calling
+ *   stop() applies .lenis-stopped { overflow: hidden } and native scroll dies.
+ *   iOS Safari inertia is also better than intercepting the wheel.
  */
 export function SmoothScroll() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export function SmoothScroll() {
     ).matches;
 
     if (prefersReducedMotion) return;
+    if (isTouchPrimary) return;
 
     const lenis = new Lenis({
       duration: 1.15,
@@ -59,11 +61,6 @@ export function SmoothScroll() {
         snap.addElement(el, { align: ["start"] });
       });
     }, 150);
-
-    if (isTouchPrimary) {
-      lenis.stop();
-      snap.stop();
-    }
 
     return () => {
       clearTimeout(registrationTimer);

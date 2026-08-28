@@ -158,6 +158,8 @@ describe('estate redirects and landings', () => {
       'utf8'
     );
     expect(smoothScroll).toMatch(/prefers-reduced-motion:\s*reduce/);
+    expect(smoothScroll).toMatch(/if \(isTouchPrimary\) return;/);
+    expect(smoothScroll).not.toMatch(/lenis\.stop\(/);
   });
 });
 
