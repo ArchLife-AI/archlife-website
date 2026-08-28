@@ -139,7 +139,11 @@ const CONCEPT = {
       "AI-mediated institutions preserving accountability under scale",
     ],
     related: ["reflection", "operationalTrust", "institutionalCognition"],
-    essays: ["Notice, Hold, Heal, Release"],
+    essays: [
+      "Before Notice",
+      "The Architecture of Return",
+      "Notice, Hold, Heal, Release",
+    ],
     simulation:
       "Institutional Mirror treats continuity as the integrating variable beneath every other metric. Trust, strain, drift, and cognition are all read against it.",
     governance:
@@ -161,7 +165,11 @@ const CONCEPT = {
       "Institutional memory systems that surface recurrence patterns",
     ],
     related: ["hiddenStrain", "institutionalCognition", "operationalTrust"],
-    essays: ["On the Limits of Optimization", "Notice, Hold, Heal, Release"],
+    essays: [
+      "Before Notice",
+      "The Dialectical Self",
+      "On the Limits of Optimization",
+    ],
     simulation:
       "Modeled in Institutional Mirror through the Reflective Insight Feed — surfacing degradation signals before they reach operational visibility.",
     governance:
@@ -183,7 +191,11 @@ const CONCEPT = {
       "AI-mediated systems where human override is calibrated, not adversarial",
     ],
     related: ["governanceDrift", "humanState", "reflection"],
-    essays: ["On the Limits of Optimization"],
+    essays: [
+      "When Intelligence Becomes a Utility",
+      "The Machine's Constitution and the Human Person",
+      "On the Limits of Optimization",
+    ],
     simulation:
       "Tracked as Trust Index in Institutional Mirror — a continuous variable rather than a binary outcome.",
     governance:
@@ -205,7 +217,11 @@ const CONCEPT = {
       "AI-augmented institutions where the augmentation becomes legible to operators",
     ],
     related: ["governanceDrift", "institutionalMemory", "hiddenStrain"],
-    essays: ["Institutional Memory and the Forgetting Machine"],
+    essays: [
+      "Institutional Memory and the Forgetting Machine",
+      "The Fragmented Clinic",
+      "The Icarus Problem",
+    ],
     simulation:
       "Represented in Institutional Mirror as the layer where signals are integrated into decisions — the institution's reasoning process, made observable.",
     governance:
@@ -227,7 +243,11 @@ const CONCEPT = {
       "AI-mediated systems where automation hides the labor of correction",
     ],
     related: ["reflection", "ethicalDebt", "humanState"],
-    essays: ["On the Limits of Optimization"],
+    essays: [
+      "The Icarus Problem",
+      "Ascent Without Feedback",
+      "The Rhythm of Infrastructure",
+    ],
     simulation:
       "Visualized in Institutional Mirror as Strain Load — the variable most likely to be under-reported by the institution itself.",
     governance:
@@ -249,7 +269,10 @@ const CONCEPT = {
       "AI systems whose downstream harms surface only at scale",
     ],
     related: ["governanceDrift", "hiddenStrain", "operationalTrust"],
-    essays: ["Institutional Memory and the Forgetting Machine"],
+    essays: [
+      "The Elder Brother Problem",
+      "The Machine's Constitution and the Human Person",
+    ],
     simulation:
       "Modeled as a slow-accumulating reservoir in Institutional Mirror — debt that compounds when reflection and trust degrade together.",
     governance:
@@ -271,7 +294,10 @@ const CONCEPT = {
       "AI deployment whose actual scope outgrows its governance frame",
     ],
     related: ["ethicalDebt", "institutionalCognition", "operationalTrust"],
-    essays: ["Institutional Memory and the Forgetting Machine"],
+    essays: [
+      "The Machine's Constitution and the Human Person",
+      "Institutional Memory and the Forgetting Machine",
+    ],
     simulation:
       "Tracked in Institutional Mirror as a directional vector — drift is not a point, it is a trajectory.",
     governance:
@@ -294,9 +320,9 @@ const CONCEPT = {
     ],
     related: ["operationalTrust", "governanceDrift", "ethicalDebt", "reflection", "humanState"],
     essays: [
-      "On the Limits of Optimization",
+      "When Intelligence Becomes a Utility",
       "Intelligence as Extraction vs Intelligence as Care",
-      "The Fragmented Clinic",
+      "On the Limits of Optimization",
     ],
     simulation:
       "Modeled in Institutional Mirror as a divergence between stated supervision and observed override rates — a slow trajectory away from the governance frame that nominally constrains it.",
@@ -319,7 +345,11 @@ const CONCEPT = {
       "AI interfaces whose tone fails when users are in distress",
     ],
     related: ["operationalTrust", "hiddenStrain", "reflection"],
-    essays: ["Notice, Hold, Heal, Release"],
+    essays: [
+      "The Labour of Becoming Real",
+      "Ubermensch and Aniruddha",
+      "Notice, Hold, Heal, Release",
+    ],
     simulation:
       "Institutional Mirror represents human-state as both a signal source and an operating condition — affecting how every other variable is read.",
     governance:
@@ -341,7 +371,10 @@ const CONCEPT = {
       "Institutional defaults that govern AI deployment without being revisited",
     ],
     related: ["institutionalCognition", "governanceDrift", "ethicalDebt"],
-    essays: ["Institutional Memory and the Forgetting Machine"],
+    essays: [
+      "Institutional Memory and the Forgetting Machine",
+      "The Architecture of Return",
+    ],
     simulation:
       "Modeled as the slow-changing substrate beneath active operational variables — the conditions inherited rather than chosen.",
     governance:
@@ -350,48 +383,170 @@ const CONCEPT = {
 };
 
 // ── Canonical essays catalogue ───────────────────────────────
+const ESSAY_LINKS = {
+  "On the Limits of Optimization": "/articles/limits-of-optimization",
+  "Institutional Memory and the Forgetting Machine":
+    "/articles/institutional-memory",
+  "Notice, Hold, Heal, Release": "/articles/notice-hold-heal-release",
+  "Notice, Hold, Heal, Release: A Systems Heuristic":
+    "/articles/notice-hold-heal-release",
+  "The Rhythm of Infrastructure": "/articles/rhythm-of-infrastructure",
+  "Intelligence as Extraction vs Intelligence as Care":
+    "/articles/intelligence-as-care",
+  "Intelligence as Extraction vs. Intelligence as Care":
+    "/articles/intelligence-as-care",
+  "The Fragmented Clinic": "/articles/fragmented-clinic",
+  "The Icarus Problem": "/canon/icarus",
+  "Ascent Without Feedback": "/canon/ascent-without-feedback",
+  "The Architecture of Return": "/canon/architecture-of-return",
+  "The Elder Brother Problem": "/canon/elder-brother-problem",
+  "The Labour of Becoming Real": "/canon/labour-of-becoming-real",
+  "When Intelligence Becomes a Utility":
+    "/canon/when-intelligence-becomes-a-utility",
+  "The Dialectical Self": "/canon/dialectical-self",
+  "Ubermensch and Aniruddha": "/canon/ubermensch-and-aniruddha",
+  "Spirituality as an Abstract Boat": "/canon/spirituality-as-an-abstract-boat",
+  "Before Notice": "/canon/before-notice",
+  "The Machine's Constitution and the Human Person":
+    "/canon/machine-constitution",
+};
+
 const ESSAYS = [
+  {
+    title: "The Icarus Problem",
+    blurb: "On ascent, collapse, and the systems that fail to notice.",
+    readTime: "12 min",
+    href: "/canon/icarus",
+    concepts: ["hiddenStrain", "reflection", "ethicalDebt"],
+  },
+  {
+    title: "Ascent Without Feedback",
+    blurb: "When growth outruns the systems that hold it.",
+    readTime: "14 min",
+    href: "/canon/ascent-without-feedback",
+    concepts: ["hiddenStrain", "automationDrift", "continuity"],
+  },
+  {
+    title: "The Architecture of Return",
+    blurb: "On repair, belonging, and systems that receive people back.",
+    readTime: "14 min",
+    href: "/canon/architecture-of-return",
+    concepts: ["continuity", "humanState", "institutionalMemory"],
+  },
+  {
+    title: "The Elder Brother Problem",
+    blurb: "The hidden wound of the one who stayed.",
+    readTime: "14 min",
+    href: "/canon/elder-brother-problem",
+    concepts: ["humanState", "ethicalDebt", "reflection"],
+  },
+  {
+    title: "The Labour of Becoming Real",
+    blurb: "Identity rupture, and the self rebuilt through love and labour.",
+    readTime: "12 min",
+    href: "/canon/labour-of-becoming-real",
+    concepts: ["humanState", "continuity", "reflection"],
+  },
+  {
+    title: "When Intelligence Becomes a Utility",
+    blurb: "Commodified intelligence and who gets to think.",
+    readTime: "13 min",
+    href: "/canon/when-intelligence-becomes-a-utility",
+    concepts: ["automationDrift", "operationalTrust", "ethicalDebt"],
+  },
+  {
+    title: "The Dialectical Self",
+    blurb:
+      "Radical acceptance, two-sided truths, and becoming whole without becoming rigid.",
+    readTime: "8 min",
+    href: "/canon/dialectical-self",
+    concepts: ["reflection", "humanState", "continuity"],
+  },
+  {
+    title: "Ubermensch and Aniruddha",
+    blurb: "The kind of strength that does not need to dominate.",
+    readTime: "8 min",
+    href: "/canon/ubermensch-and-aniruddha",
+    concepts: ["humanState", "ethicalDebt", "reflection"],
+  },
+  {
+    title: "Spirituality as an Abstract Boat",
+    blurb: "What carries us when intellect is not enough.",
+    readTime: "8 min",
+    href: "/canon/spirituality-as-an-abstract-boat",
+    concepts: ["reflection", "continuity", "humanState"],
+  },
+  {
+    title: "Before Notice",
+    blurb:
+      "How NHHR became NaHzHaR, and why Heidegger changed the first step.",
+    readTime: "9 min",
+    href: "/canon/before-notice",
+    concepts: ["reflection", "hiddenStrain", "continuity"],
+  },
+  {
+    title: "The Machine's Constitution and the Human Person",
+    blurb:
+      "Babel, Nehemiah, and the Builder and Architect reading Claude's Constitution.",
+    readTime: "10 min",
+    href: "/canon/machine-constitution",
+    concepts: ["operationalTrust", "governanceDrift", "ethicalDebt"],
+  },
+];
+
+const PUBLIC_NOTES = [
   {
     title: "On the Limits of Optimization",
     blurb:
       "When systems optimize for efficiency alone, they quietly erase the human margin where adaptation, care, and meaning live.",
-    readTime: "8 min",
+    readTime: "2 min",
+    href: "/articles/limits-of-optimization",
     concepts: ["operationalTrust", "ethicalDebt", "humanState", "automationDrift"],
   },
   {
     title: "Institutional Memory and the Forgetting Machine",
     blurb:
       "Modern institutions accumulate process but lose memory. The cost is invisible until the system fragments under its own velocity.",
-    readTime: "11 min",
+    readTime: "2 min",
+    href: "/articles/institutional-memory",
     concepts: ["institutionalMemory", "governanceDrift", "reflection"],
   },
   {
     title: "Notice, Hold, Heal, Release",
     blurb:
       "A systems heuristic for operational intelligence that honors the recursive, nonlinear nature of integration in humans and institutions alike.",
-    readTime: "9 min",
+    readTime: "2 min",
+    href: "/articles/notice-hold-heal-release",
     concepts: ["reflection", "humanState", "continuity"],
   },
   {
     title: "The Rhythm of Infrastructure",
     blurb:
-      "Every operational system has a rhythm. When that rhythm breaks through speed, fragmentation, or overload, the system begins to lose coherence.",
-    readTime: "7 min",
+      "Every operational system has a rhythm. When that rhythm breaks through speed, fragmentation, or overload, the system loses coherence.",
+    readTime: "2 min",
+    href: "/articles/rhythm-of-infrastructure",
     concepts: ["hiddenStrain", "institutionalCognition", "continuity"],
   },
   {
     title: "Intelligence as Extraction vs Intelligence as Care",
     blurb:
       "The dominant AI paradigm extracts signal. A humane alternative asks what a system needs to become more coherent, not just more efficient.",
-    readTime: "13 min",
+    readTime: "2 min",
+    href: "/articles/intelligence-as-care",
     concepts: ["operationalTrust", "reflection", "humanState", "automationDrift"],
   },
   {
     title: "The Fragmented Clinic",
     blurb:
       "Healthcare fragmentation is not a technical failure. It is a coordination failure — and coordination is a deeply human problem wearing technical clothing.",
-    readTime: "10 min",
-    concepts: ["institutionalCognition", "governanceDrift", "hiddenStrain", "automationDrift"],
+    readTime: "2 min",
+    href: "/articles/fragmented-clinic",
+    concepts: [
+      "institutionalCognition",
+      "governanceDrift",
+      "hiddenStrain",
+      "automationDrift",
+    ],
   },
 ];
 
@@ -733,21 +888,42 @@ function ConceptPanel({ id, onClose, onJump }) {
         </Block>
 
         <Block label="Canonical essays">
-          {data.essays.map((title) => (
-            <div
-              key={title}
-              style={{
-                fontFamily: "var(--serif)",
-                fontSize: "1.05rem",
-                fontWeight: 300,
-                color: "rgba(243,239,231,0.7)",
-                fontStyle: "italic",
-                marginBottom: "0.4rem",
-              }}
-            >
-              — {title}
-            </div>
-          ))}
+          {data.essays.map((title) => {
+            const href = ESSAY_LINKS[title];
+            const style = {
+              fontFamily: "var(--serif)",
+              fontSize: "1.05rem",
+              fontWeight: 300,
+              color: "rgba(243,239,231,0.7)",
+              fontStyle: "italic",
+              marginBottom: "0.4rem",
+              textDecoration: "none",
+              display: "block",
+              transition: "color 0.3s ease",
+            };
+            if (!href) {
+              return (
+                <div key={title} style={style}>
+                  — {title}
+                </div>
+              );
+            }
+            return (
+              <a
+                key={title}
+                href={href}
+                style={style}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "#C88B5A";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "rgba(243,239,231,0.7)";
+                }}
+              >
+                — {title}
+              </a>
+            );
+          })}
         </Block>
 
         <Block label="In Institutional Mirror">
@@ -1291,7 +1467,21 @@ export default function CanonPage() {
                     letterSpacing: "-0.005em",
                   }}
                 >
-                  {essay.title}
+                  <a
+                    href={essay.href}
+                    style={{
+                      color: "inherit",
+                      textDecoration: "none",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = "#C88B5A";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = "var(--ink)";
+                    }}
+                  >
+                    {essay.title}
+                  </a>
                 </h3>
                 <p
                   style={{
@@ -1337,6 +1527,154 @@ export default function CanonPage() {
                     );
                   })}
                 </div>
+                <a
+                  href={essay.href}
+                  style={{
+                    display: "inline-block",
+                    marginTop: "1.4rem",
+                    fontFamily: "var(--sans)",
+                    fontSize: "0.62rem",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    textDecoration: "none",
+                  }}
+                >
+                  Read →
+                </a>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          PUBLIC PHILOSOPHY NOTES
+      ═══════════════════════════════════════ */}
+      <section
+        style={{
+          position: "relative",
+          zIndex: 1,
+          padding: "clamp(4rem,8vw,7rem) clamp(1.5rem,8vw,8rem)",
+          maxWidth: 1100,
+          margin: "0 auto",
+          borderTop: "1px solid rgba(200,139,90,0.06)",
+        }}
+      >
+        <Reveal>
+          <SectionLabel>Public Philosophy</SectionLabel>
+        </Reveal>
+        <Reveal delay={60}>
+          <p
+            style={{
+              fontFamily: "var(--serif)",
+              fontSize: "clamp(1.4rem, 3vw, 2.1rem)",
+              fontWeight: 300,
+              color: "var(--ink)",
+              marginBottom: "2.4rem",
+              maxWidth: 640,
+              lineHeight: 1.25,
+              marginTop: "0.6rem",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            Shorter notes in the operational register — clinics, care, and
+            systems that remember.
+          </p>
+        </Reveal>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "0",
+            borderTop: "1px solid rgba(200,139,90,0.1)",
+          }}
+        >
+          {PUBLIC_NOTES.map((essay, i) => (
+            <Reveal key={essay.title} delay={i * 70 + 80}>
+              <article
+                style={{
+                  padding: "2.5rem 2rem 2.5rem 0",
+                  borderRight:
+                    i === PUBLIC_NOTES.length - 1
+                      ? "none"
+                      : "1px solid rgba(200,139,90,0.05)",
+                  borderBottom: "1px solid rgba(200,139,90,0.05)",
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "var(--sans)",
+                    fontSize: "0.58rem",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "var(--gold-deep)",
+                    marginBottom: "1rem",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <span>Note {String(i + 1).padStart(2, "0")}</span>
+                  <span
+                    style={{
+                      color: "rgba(156,163,175,0.4)",
+                      letterSpacing: "0.18em",
+                    }}
+                  >
+                    {essay.readTime}
+                  </span>
+                </div>
+                <h3
+                  style={{
+                    fontFamily: "var(--serif)",
+                    fontSize: "1.45rem",
+                    fontWeight: 300,
+                    color: "var(--ink)",
+                    lineHeight: 1.2,
+                    margin: 0,
+                    marginBottom: "1rem",
+                    letterSpacing: "-0.005em",
+                  }}
+                >
+                  <a
+                    href={essay.href}
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = "#C88B5A";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = "var(--ink)";
+                    }}
+                  >
+                    {essay.title}
+                  </a>
+                </h3>
+                <p
+                  style={{
+                    fontFamily: "var(--sans)",
+                    fontSize: "0.78rem",
+                    lineHeight: 1.85,
+                    color: "rgba(156,163,175,0.6)",
+                    fontWeight: 300,
+                    marginBottom: "1.6rem",
+                  }}
+                >
+                  {essay.blurb}
+                </p>
+                <a
+                  href={essay.href}
+                  style={{
+                    fontFamily: "var(--sans)",
+                    fontSize: "0.62rem",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    textDecoration: "none",
+                  }}
+                >
+                  Read →
+                </a>
               </article>
             </Reveal>
           ))}

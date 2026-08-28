@@ -5,7 +5,8 @@ export const researchArticles = [
     title: "On the Limits of Optimization",
     excerpt:
       "When systems optimize for efficiency alone, they quietly erase the human margin — the space where adaptation, care, and meaning live.",
-    readTime: "8 min",
+    readTime: "2 min",
+    href: "/articles/limits-of-optimization",
     tags: ["Intelligence", "Systems", "Care"],
   },
   {
@@ -14,7 +15,8 @@ export const researchArticles = [
     title: "Institutional Memory and the Forgetting Machine",
     excerpt:
       "Modern institutions accumulate process but lose memory. The cost is invisible until the system fragments under its own velocity.",
-    readTime: "11 min",
+    readTime: "2 min",
+    href: "/articles/institutional-memory",
     tags: ["Institutions", "Memory", "Infrastructure"],
   },
   {
@@ -23,7 +25,8 @@ export const researchArticles = [
     title: "Notice, Hold, Heal, Release: A Systems Heuristic",
     excerpt:
       "A framework for operational intelligence that honors the recursive, nonlinear nature of integration — in humans and institutions alike.",
-    readTime: "9 min",
+    readTime: "2 min",
+    href: "/articles/notice-hold-heal-release",
     tags: ["Healing", "Recursion", "Framework"],
   },
   {
@@ -32,7 +35,8 @@ export const researchArticles = [
     title: "The Rhythm of Infrastructure",
     excerpt:
       "Every operational system has a rhythm. When that rhythm breaks — through speed, fragmentation, or overload — the system begins to lose coherence.",
-    readTime: "7 min",
+    readTime: "2 min",
+    href: "/articles/rhythm-of-infrastructure",
     tags: ["Infrastructure", "Rhythm", "Operations"],
   },
   {
@@ -41,7 +45,8 @@ export const researchArticles = [
     title: "Intelligence as Extraction vs. Intelligence as Care",
     excerpt:
       "The dominant AI paradigm extracts signal. A humane alternative would ask: what does this system need to become more coherent, not just more efficient?",
-    readTime: "13 min",
+    readTime: "2 min",
+    href: "/articles/intelligence-as-care",
     tags: ["AI", "Care", "Ethics"],
   },
   {
@@ -50,7 +55,8 @@ export const researchArticles = [
     title: "The Fragmented Clinic",
     excerpt:
       "Healthcare fragmentation is not a technical failure. It is a coordination failure — and coordination is a deeply human problem wearing technical clothing.",
-    readTime: "10 min",
+    readTime: "2 min",
+    href: "/articles/fragmented-clinic",
     tags: ["Healthcare", "Coordination", "Fragmentation"],
   },
 ];

@@ -14,6 +14,38 @@ export function ResearchSection() {
         margin: "0 auto",
       }}
     >
+      <style>{`
+        .research-row {
+          display: grid;
+          grid-template-columns: minmax(7rem, 12.5rem) minmax(0, 1fr) auto;
+          gap: 3rem;
+          padding: 3rem 0;
+          border-top: 1px solid rgba(200,139,90,0.08);
+          transition: border-color 0.5s ease;
+          align-items: start;
+          text-decoration: none;
+          color: inherit;
+        }
+        .research-row:hover {
+          border-top-color: rgba(200,139,90,0.3);
+        }
+        .research-row:hover .article-title {
+          color: #C88B5A;
+        }
+        .research-readtime {
+          text-align: right;
+        }
+        @media (max-width: 720px) {
+          .research-row {
+            grid-template-columns: 1fr;
+            gap: 0.85rem;
+            padding: 2.2rem 0;
+          }
+          .research-readtime {
+            text-align: left;
+          }
+        }
+      `}</style>
       <Reveal>
         <SectionLabel>Research & Thinking</SectionLabel>
       </Reveal>
@@ -37,33 +69,10 @@ export function ResearchSection() {
         </h2>
       </Reveal>
 
-      {/* Pure flowing list — no cards, no boxes */}
       <div>
         {researchArticles.map((article, i) => (
           <Reveal key={article.id} delay={i * 70}>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "200px 1fr 120px",
-                gap: "3rem",
-                padding: "3rem 0",
-                borderTop: "1px solid rgba(200,139,90,0.08)",
-                transition: "border-color 0.5s ease",
-                cursor: "pointer",
-                alignItems: "start",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderTopColor = "rgba(200,139,90,0.3)";
-                const title = e.currentTarget.querySelector(".article-title");
-                if (title) title.style.color = "#C88B5A";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderTopColor = "rgba(200,139,90,0.08)";
-                const title = e.currentTarget.querySelector(".article-title");
-                if (title) title.style.color = "#F3EFE7";
-              }}
-            >
-              {/* Category + tags */}
+            <a className="research-row" href={article.href}>
               <div style={{ paddingTop: "0.2rem" }}>
                 <div
                   style={{
@@ -101,7 +110,6 @@ export function ResearchSection() {
                 </div>
               </div>
 
-              {/* Title + excerpt */}
               <div>
                 <div
                   className="article-title"
@@ -132,21 +140,20 @@ export function ResearchSection() {
                 </p>
               </div>
 
-              {/* Read time */}
               <div
+                className="research-readtime"
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: "0.65rem",
                   color: "rgba(156,163,175,0.3)",
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  textAlign: "right",
                   paddingTop: "0.25rem",
                 }}
               >
                 {article.readTime}
               </div>
-            </div>
+            </a>
           </Reveal>
         ))}
         <div style={{ borderTop: "1px solid rgba(200,139,90,0.08)" }} />
