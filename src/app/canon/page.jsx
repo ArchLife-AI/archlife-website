@@ -1844,10 +1844,6 @@ export default function CanonPage() {
                   sub: "Babel, Nehemiah, and the Builder and Architect reading Claude's Constitution",
                   href: "/canon/machine-constitution",
                 },
-                { label: "Founder Notes", sub: "Origin journals · 2019—" },
-                { label: "Mythopoetic Maps", sub: "Symbolic architectures" },
-                { label: "Reflective Diaries", sub: "Continuity through crisis" },
-                { label: "Letter to Institutions", sub: "Foundational essays" },
               ].map((item, i) => {
                 const rowStyle = {
                   padding: "1.4rem 0",

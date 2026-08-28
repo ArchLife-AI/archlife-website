@@ -41,8 +41,10 @@ const INTERNAL_ROUTES = new Set([
   '/manthan',
   '/manifesto',
   '/medevolv',
+  '/privacy',
   '/sensorium',
   '/solaeimara',
+  '/terms',
 ]);
 
 const EXTERNAL_DOMAINS = new Set([
@@ -66,6 +68,20 @@ describe('navigation links', () => {
     expect(sensoriumLinks.length).toBeGreaterThan(0);
     for (const link of sensoriumLinks) {
       expect(link.getAttribute('href')).toBe('/sensorium');
+    }
+  });
+
+  it('renders Articles and Healthcare links', () => {
+    render(<Nav />);
+    const articlesLinks = screen.getAllByRole('link', { name: /^Articles$/ });
+    expect(articlesLinks.length).toBeGreaterThan(0);
+    for (const link of articlesLinks) {
+      expect(link.getAttribute('href')).toBe('/articles');
+    }
+    const healthcareLinks = screen.getAllByRole('link', { name: /^Healthcare$/ });
+    expect(healthcareLinks.length).toBeGreaterThan(0);
+    for (const link of healthcareLinks) {
+      expect(link.getAttribute('href')).toBe('/healthcare');
     }
   });
 
@@ -109,6 +125,16 @@ describe('navigation links', () => {
     expect(screen.getByText(/CIN:\s*U62020DC2026PTC472434/i)).toBeTruthy();
     expect(document.body.textContent).not.toMatch(/CIN:\s*pending/i);
   });
+
+  it('exposes Privacy and Terms in the sitewide footer', () => {
+    render(<Footer />);
+    expect(screen.getByRole('link', { name: /^Privacy$/ }).getAttribute('href')).toBe(
+      '/privacy'
+    );
+    expect(screen.getByRole('link', { name: /^Terms$/ }).getAttribute('href')).toBe(
+      '/terms'
+    );
+  });
 });
 
 describe('healthcare CTA', () => {
@@ -142,6 +168,15 @@ describe('estate redirects and landings', () => {
     for (const destination of destinations) {
       expect(destination).toBe('https://thesensorium.archlife.in');
     }
+  });
+
+  it('aliases privacy-policy and terms-of-service onto the notice pages', () => {
+    const vercel = JSON.parse(readFileSync(join(repoRoot, 'vercel.json'), 'utf8'));
+    const bySource = Object.fromEntries(
+      (vercel.redirects || []).map((rule) => [rule.source, rule.destination])
+    );
+    expect(bySource['/privacy-policy']).toBe('/privacy');
+    expect(bySource['/terms-of-service']).toBe('/terms');
   });
 
   it('keeps /manthan as a landing rewrite, not a paywall', () => {

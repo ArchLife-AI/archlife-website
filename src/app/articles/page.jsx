@@ -30,7 +30,6 @@ const publications = [
 export default function ArticlesPage() {
   return (
     <PageShell>
-      <ResearchSection />
       <section
         style={{
           position: "relative",
@@ -150,6 +149,7 @@ export default function ArticlesPage() {
           </p>
         </Reveal>
       </section>
+      <ResearchSection />
     </PageShell>
   );
 }

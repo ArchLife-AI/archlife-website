@@ -9,6 +9,15 @@ export const meta = () => [
     content:
       "The founding position paper of the AI Collective Delhi Healthcare Chapter — second edition, August 2026. The manifesto preserved verbatim; the evidence and timeline renewed.",
   },
+  {
+    property: "og:title",
+    content: "The Delhi Declaration on Healthcare AI Governance | ArchLife",
+  },
+  {
+    property: "og:description",
+    content:
+      "The founding position paper of the AI Collective Delhi Healthcare Chapter — second edition, August 2026. The manifesto preserved verbatim; the evidence and timeline renewed.",
+  },
 ];
 
 // ── Typographic helpers, scoped to this publication. ──

@@ -1,4 +1,3 @@
-import { ContactSection } from "@/components/ContactSection/ContactSection";
 import { PageShell } from "@/components/PageShell/PageShell";
 import { Reveal } from "@/components/Reveal/Reveal";
 import { SectionLabel } from "@/components/SectionLabel/SectionLabel";
@@ -116,8 +115,8 @@ export default function ContactPage() {
                   fontWeight: 300,
                 }}
               >
-                Dr. Ishaan Wadhwa joins the PGP in Applied AI &amp; Agentic
-                Systems at Masters&apos; Union in August 2026.
+                PGP, Applied AI and Agentic Systems, Masters&apos; Union (from
+                August 2026).
               </p>
             </Reveal>
             <Reveal delay={220}>
@@ -264,6 +263,19 @@ export default function ContactPage() {
                     >
                       {route.body}
                     </p>
+                    <p
+                      style={{
+                        fontFamily: fonts.sans,
+                        color: "rgba(200,139,90,0.78)",
+                        fontSize: "0.78rem",
+                        lineHeight: 1.5,
+                        margin: "0.9rem 0 0",
+                        fontWeight: 400,
+                        letterSpacing: "0.04em",
+                      }}
+                    >
+                      hello@archlife.in
+                    </p>
                   </div>
                   <span
                     style={{
@@ -284,7 +296,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ContactSection />
       <style>{`
         @media (max-width: 900px) {
           .contact-route-grid {

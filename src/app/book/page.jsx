@@ -187,6 +187,21 @@ export default function BookPage() {
           </p>
         </Reveal>
 
+        <Reveal delay={150}>
+          <p
+            style={{
+              fontFamily: "var(--sans)",
+              fontSize: "0.72rem",
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "rgba(200,139,90,0.72)",
+              margin: "0 auto 3rem",
+            }}
+          >
+            Manuscript in formation. Not yet in print.
+          </p>
+        </Reveal>
+
         <Reveal delay={180}>
           <p
             style={{
@@ -984,6 +999,30 @@ export default function BookPage() {
             <span style={{ color: "rgba(200,139,90,0.65)" }}>
               Welcome to Living Therapy.
             </span>
+          </p>
+        </Reveal>
+        <Reveal delay={140}>
+          <p
+            style={{
+              fontFamily: "var(--sans)",
+              fontSize: "0.78rem",
+              lineHeight: 1.8,
+              color: "rgba(156,163,175,0.55)",
+              margin: "2.4rem 0 0",
+            }}
+          >
+            Read the{" "}
+            <a href="/canon" style={{ color: "#C88B5A", textDecoration: "none" }}>
+              Deep Canon
+            </a>{" "}
+            while the manuscript forms, or{" "}
+            <a
+              href="/contact"
+              style={{ color: "#C88B5A", textDecoration: "none" }}
+            >
+              write to ArchLife
+            </a>
+            .
           </p>
         </Reveal>
         <Reveal delay={160}>

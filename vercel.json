@@ -12,6 +12,16 @@
       "source": "/thesensorium/",
       "destination": "https://thesensorium.archlife.in",
       "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -46,7 +56,9 @@
     { "source": "/institutional-mirror", "destination": "/index.html" },
     { "source": "/manthan", "destination": "/index.html" },
     { "source": "/medevolv", "destination": "/index.html" },
+    { "source": "/privacy", "destination": "/index.html" },
     { "source": "/sensorium", "destination": "/index.html" },
-    { "source": "/solaeimara", "destination": "/index.html" }
+    { "source": "/solaeimara", "destination": "/index.html" },
+    { "source": "/terms", "destination": "/index.html" }
   ]
 }

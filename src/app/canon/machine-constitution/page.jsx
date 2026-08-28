@@ -3,6 +3,15 @@ import { Reveal } from "@/components/Reveal/Reveal";
 import { EssayArtwork } from "@/components/EssayArtwork/EssayArtwork";
 import { Link } from "react-router";
 
+export const meta = () => [
+  { title: "The Machine's Constitution and the Human Person | ArchLife" },
+  {
+    name: "description",
+    content:
+      "The Builder and the Architect read Claude's Constitution and Magnifica Humanitas. A Deep Canon essay on Babel, Nehemiah, and the human person.",
+  },
+];
+
 /* ─── local typographic helpers ─── */
 function H2({ children }) {
   return (

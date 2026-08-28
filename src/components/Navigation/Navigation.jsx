@@ -21,8 +21,10 @@ export function Nav() {
   const links = [
     { label: "Projects", href: "/#work" },
     { label: "Dental Labs", href: "/dental-labs" },
+    { label: "Healthcare", href: "/healthcare" },
     { label: "The Sensorium", href: "/sensorium" },
     { label: "MANthan", href: "/manthan" },
+    { label: "Articles", href: "/articles" },
     { label: "Canon", href: "/canon" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

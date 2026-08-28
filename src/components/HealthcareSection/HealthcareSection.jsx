@@ -22,11 +22,11 @@ export function HealthcareSection() {
   ];
 
   const credentials = [
-    "Delhi AI Collective",
-    "AI Healthcare Vertical",
-    "BITS Pilani — Executive MBA in AI",
-    "Masters' Union Ecosystem",
-    "Medoc Health",
+    { name: "Delhi AI Collective", gloss: "Chapter" },
+    { name: "AI Healthcare Vertical", gloss: "Chapter role" },
+    { name: "BITS Pilani — Executive MBA in AI", gloss: "Programme" },
+    { name: "Masters' Union Ecosystem", gloss: "Programme" },
+    { name: "Medoc Health", gloss: "Peer, not a client" },
   ];
 
   return (
@@ -263,29 +263,54 @@ export function HealthcareSection() {
 
       {/* Credibility strip */}
       <Reveal delay={520}>
-        <div
-          style={{
-            marginTop: "5rem",
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "1rem 3.5rem",
-            alignItems: "center",
-          }}
-        >
-          {credentials.map((c) => (
-            <div
-              key={c}
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: "0.62rem",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "rgba(156,163,175,0.32)",
-              }}
-            >
-              {c}
-            </div>
-          ))}
+        <div style={{ marginTop: "5rem" }}>
+          <div
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.58rem",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "rgba(155,94,69,0.7)",
+              marginBottom: "1.4rem",
+            }}
+          >
+            Context, not clients.
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1.4rem 3.5rem",
+              alignItems: "flex-start",
+            }}
+          >
+            {credentials.map((c) => (
+              <div key={c.name}>
+                <div
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.62rem",
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "rgba(156,163,175,0.42)",
+                  }}
+                >
+                  {c.name}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.58rem",
+                    letterSpacing: "0.08em",
+                    color: "rgba(156,163,175,0.32)",
+                    marginTop: "0.25rem",
+                  }}
+                >
+                  {c.gloss}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </Reveal>
     </section>

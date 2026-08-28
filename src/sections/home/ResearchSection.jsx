@@ -88,6 +88,25 @@ export function ResearchSection() {
           </Reveal>
         ))}
       </div>
+      <Reveal delay={300}>
+        <a
+          href="/articles"
+          style={{
+            display: "inline-block",
+            marginTop: "2.4rem",
+            fontFamily: "var(--sans)",
+            fontSize: "0.62rem",
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+            color: "rgba(200,139,90,0.78)",
+            textDecoration: "none",
+            borderBottom: "1px solid rgba(200,139,90,0.28)",
+            paddingBottom: 3,
+          }}
+        >
+          Writing
+        </a>
+      </Reveal>
     </section>
   );
 }

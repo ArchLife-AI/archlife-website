@@ -3,6 +3,15 @@ import { Reveal } from "@/components/Reveal/Reveal";
 import { EssayArtwork } from "@/components/EssayArtwork/EssayArtwork";
 import { Link } from "react-router";
 
+export const meta = () => [
+  { title: "Spirituality as an Abstract Boat | ArchLife" },
+  {
+    name: "description",
+    content:
+      "On the Gita, the modern battlefield, and what carries us when intellect is not enough. A Deep Canon essay.",
+  },
+];
+
 /* ─── local typographic helpers ─── */
 function H2({ children }) {
   return (

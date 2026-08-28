@@ -52,11 +52,11 @@ export function AboutSection() {
               {[
                 {
                   n: "01 — Clinical Reality",
-                  t: "Observing healthcare fragmentation from the inside — not as a statistic. As the daily operational reality of 700 clinics, 1,650 doctors, and the invisible toll of disconnected systems on the people trying to hold them together.",
+                  t: "Observing healthcare fragmentation from the inside — not as a statistic. As the daily operational reality of 700+ clinics / 1,650+ doctors, and the invisible toll of disconnected systems on the people trying to hold them together.",
                 },
                 {
                   n: "02 — Systems Awareness",
-                  t: "Realizing that suffering is often infrastructural. That the wound is frequently in the coordination layer, not the clinical one.",
+                  t: "Realising that suffering is often infrastructural. That the wound is frequently in the coordination layer, not the clinical one.",
                 },
                 {
                   n: "03 — Operational Intelligence",
@@ -166,7 +166,7 @@ export function AboutSection() {
                 lineHeight: 1.6,
               }}
             >
-              PGP, Applied AI &amp; Agentic Systems, Masters&apos; Union &middot; Joining August 2026
+              PGP, Applied AI and Agentic Systems, Masters&apos; Union (from August 2026)
             </div>
             <a
               href="https://www.linkedin.com/in/dr-ishaan-wadhwa-98a017244"

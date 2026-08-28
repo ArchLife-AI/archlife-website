@@ -75,7 +75,7 @@ const diagnosticSignals = [
 const discoverySteps = [
   "3 structured site visits inside the lab environment.",
   "Shadow the complete case lifecycle: intake, model work, fabrication, QC, dispatch, and rework.",
-  "Interview Dr. Arora, the lab manager, senior technicians, and key operational owners.",
+  "Interview the lab owner, the lab manager, senior technicians, and key operational owners.",
   "Map WhatsApp flows, spreadsheets, job cards, rework signals, inventory practices, and handoffs.",
   "Benchmark current operations against Indian dental lab realities and global LMS capability patterns.",
 ];
@@ -165,38 +165,6 @@ export const meta = () => [
       "An ArchLife engagement page for dental lab operational intelligence: Phase 1 discovery, workflow mapping, and the path toward a Case Intelligence System.",
   },
 ];
-
-function Metric({ value, label }) {
-  return (
-    <div
-      style={{
-        borderTop: "1px solid rgba(200,139,90,0.2)",
-        paddingTop: "1.1rem",
-      }}
-    >
-      <div
-        style={{
-          ...serifTitle,
-          fontSize: "clamp(2rem, 4vw, 3.2rem)",
-          lineHeight: 1,
-          color: "var(--gold)",
-          marginBottom: "0.8rem",
-        }}
-      >
-        {value}
-      </div>
-      <div
-        style={{
-          ...eyebrow,
-          color: "rgba(156,163,175,0.48)",
-          lineHeight: 1.6,
-        }}
-      >
-        {label}
-      </div>
-    </div>
-  );
-}
 
 function Row({ label, detail, index }) {
   return (
@@ -411,19 +379,19 @@ export default function DentalLabsPage() {
             </Reveal>
           </div>
           <Reveal delay={200}>
-            <div
-              className="den-metrics"
+            <p
               style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "clamp(1.5rem, 4vw, 3.5rem)",
-                marginTop: "5rem",
+                ...bodyText,
+                marginTop: "4rem",
+                maxWidth: 680,
+                borderTop: "1px solid rgba(200,139,90,0.18)",
+                paddingTop: "1.6rem",
               }}
             >
-              <Metric value="$699.7M" label="Indian dental lab market in 2023" />
-              <Metric value="$1.13B" label="Projected market size by 2030" />
-              <Metric value="80-90%" label="Indian labs still largely unorganized" />
-            </div>
+              The constraint is visibility. Much of the sector still runs
+              without a shared picture of the cases moving through it, in a
+              largely unorganised operating layer.
+            </p>
           </Reveal>
         </section>
 
@@ -671,6 +639,63 @@ export default function DentalLabsPage() {
           </div>
         </section>
 
+        <section style={sectionStyle}>
+          <Reveal>
+            <SectionLabel>Phase 1, in practice</SectionLabel>
+          </Reveal>
+          <Reveal delay={70}>
+            <h2
+              style={{
+                ...serifTitle,
+                fontSize: "clamp(2rem, 4.2vw, 3.2rem)",
+                lineHeight: 1.12,
+                maxWidth: 720,
+                margin: "0 0 2.4rem",
+              }}
+            >
+              What the discovery actually is.
+            </h2>
+          </Reveal>
+          <div>
+            {[
+              {
+                q: "Duration",
+                a: "Paid discovery. The band is confirmed on the alignment call, not on this page.",
+              },
+              {
+                q: "Deliverable",
+                a: "A written operating picture of how work actually moves through the lab: visibility, routing, learning, and the first practical path to scale.",
+              },
+              {
+                q: "Software",
+                a: "No software purchase required. This is a discovery engagement, not a product install.",
+              },
+              {
+                q: "Who comes on site",
+                a: "The founder, and a small operating team as needed. The first site visit is scheduled within five working days of alignment.",
+              },
+            ].map((item, index) => (
+              <Reveal key={item.q} delay={index * 70}>
+                <div
+                  className="den-row"
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "minmax(140px, 0.7fr) 1.6fr",
+                    gap: "1.4rem",
+                    padding: "1.5rem 0",
+                    borderTop: "1px solid rgba(200,139,90,0.09)",
+                  }}
+                >
+                  <div style={{ ...eyebrow, color: "rgba(200,139,90,0.78)" }}>
+                    {item.q}
+                  </div>
+                  <div style={{ ...bodyText, margin: 0 }}>{item.a}</div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
         <section
           style={{
             ...sectionStyle,
@@ -748,7 +773,6 @@ export default function DentalLabsPage() {
             line-height: 1.04 !important;
           }
           .den-intro-grid,
-          .den-metrics,
           .den-row,
           .den-team-row {
             grid-template-columns: 1fr !important;

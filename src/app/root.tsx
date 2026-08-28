@@ -36,8 +36,10 @@ const PUBLIC_CANONICAL_PATHS = [
   '/institutional-mirror',
   '/manthan',
   '/medevolv',
+  '/privacy',
   '/sensorium',
   '/solaeimara',
+  '/terms',
   '/manifesto',
   '/canon/architecture-of-return',
   '/canon/ascent-without-feedback',
@@ -68,6 +70,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ArchLife | Healthcare AI Governance and Operations</title>
+        <meta
+          name="description"
+          content="ArchLife builds governance and operating systems for healthcare AI and high-strain institutions, spanning live prototypes, operational engagements, and research foundations."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="ArchLife" />
+        <meta
+          property="og:title"
+          content="ArchLife | Healthcare AI Governance and Operations"
+        />
+        <meta
+          property="og:description"
+          content="ArchLife builds governance and operating systems for healthcare AI and high-strain institutions, spanning live prototypes, operational engagements, and research foundations."
+        />
+        <meta property="og:image" content="https://archlife.in/logo.webp" />
+        <meta name="twitter:card" content="summary" />
         <Meta />
         {canonicalHref && <link rel="canonical" href={canonicalHref} />}
         <Links />

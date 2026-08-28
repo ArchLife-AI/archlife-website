@@ -9,6 +9,15 @@ export const meta = () => [
     content:
       "A structured gap analysis of India's healthcare AI governance architecture against the global state of the art. Public release v1.0, August 2026.",
   },
+  {
+    property: "og:title",
+    content: "The Four Gaps in India's Healthcare AI Governance | ArchLife",
+  },
+  {
+    property: "og:description",
+    content:
+      "A structured gap analysis of India's healthcare AI governance architecture against the global state of the art. Public release v1.0, August 2026.",
+  },
 ];
 
 // ── Typographic helpers, scoped to this publication. ──

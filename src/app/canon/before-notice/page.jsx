@@ -3,6 +3,15 @@ import { Reveal } from "@/components/Reveal/Reveal";
 import { EssayArtwork } from "@/components/EssayArtwork/EssayArtwork";
 import { Link } from "react-router";
 
+export const meta = () => [
+  { title: "Before Notice | ArchLife" },
+  {
+    name: "description",
+    content:
+      "How NHHR became NaHzHaR, and why Heidegger changed the first step. A Deep Canon essay on being already somewhere before notice.",
+  },
+];
+
 /* ─── local typographic helpers ─── */
 function H2({ children }) {
   return (

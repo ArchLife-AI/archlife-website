@@ -45,9 +45,8 @@ const offerings = [
     category: "Living therapy",
     description:
       "Living therapy sessions in the Sensorium's central hall — the interactive experience of The Builder and The Architect.",
-    href: "https://manthan.archlife.in",
+    href: "/manthan",
     action: "Open MANthan",
-    external: true,
   },
 ];
 

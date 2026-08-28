@@ -5,7 +5,7 @@ export function DentalSection() {
   const threads = [
     {
       n: "Coordination at Scale",
-      d: "Mapping how clinical intent travels — and fractures — across 700 clinics and 1,650 doctors operating within a single institutional ecosystem.",
+      d: "Mapping how clinical intent travels — and fractures — across 700+ clinics / 1,650+ doctors operating within a single institutional ecosystem.",
     },
     {
       n: "Operational Data Research",
@@ -79,8 +79,8 @@ export function DentalSection() {
             >
               The BDS was not the endpoint. It was the entry point — into a
               system too large to see from any single chair. At Clove Dental,
-              the operational scale became the research environment: 700
-              clinics, 1,650 doctors, and the recurring question of why
+              the operational scale became the research environment: 700+
+              clinics / 1,650+ doctors, and the recurring question of why
               clinical intelligence so rarely reaches the people who need it.
             </p>
           </Reveal>
