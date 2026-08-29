@@ -14,6 +14,12 @@ export const meta = () => [
 
 const publications = [
   {
+    title: "A Standing Capability",
+    sub: "What DHR's draft National Health Research Policy 2026 actually says about healthcare AI — and what a SHALL is not",
+    href: "/articles/nhrp-draft",
+    meta: "Publication · August 2026",
+  },
+  {
     title: "The Four Gaps in India's Healthcare AI Governance",
     sub: "A structured gap analysis of India's governance architecture against the global state of the art",
     href: "/articles/four-gaps",

@@ -15,6 +15,7 @@ const INTERNAL_ROUTES = new Set([
   '/articles',
   '/articles/four-gaps',
   '/articles/delhi-declaration',
+  '/articles/nhrp-draft',
   '/articles/limits-of-optimization',
   '/articles/institutional-memory',
   '/articles/notice-hold-heal-release',

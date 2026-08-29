@@ -30,6 +30,7 @@
     { "source": "/articles", "destination": "/index.html" },
     { "source": "/articles/four-gaps", "destination": "/index.html" },
     { "source": "/articles/delhi-declaration", "destination": "/index.html" },
+    { "source": "/articles/nhrp-draft", "destination": "/index.html" },
     { "source": "/articles/limits-of-optimization", "destination": "/index.html" },
     { "source": "/articles/institutional-memory", "destination": "/index.html" },
     { "source": "/articles/notice-hold-heal-release", "destination": "/index.html" },
