@@ -16,7 +16,7 @@ const concepts = [
   },
   {
     name: "Governance Drift",
-    desc: "The gradual mutation of institutional behavior under sustained pressure.",
+    desc: "The gradual mutation of institutional behaviour under sustained pressure.",
   },
   {
     name: "Reflective Awareness",

@@ -24,7 +24,7 @@ export const researchArticles = [
     category: "Recursive Healing",
     title: "Notice, Hold, Heal, Release: A Systems Heuristic",
     excerpt:
-      "A framework for operational intelligence that honors the recursive, nonlinear nature of integration — in humans and institutions alike.",
+      "A framework for operational intelligence that honours the recursive, nonlinear nature of integration — in humans and institutions alike.",
     readTime: "2 min",
     href: "/articles/notice-hold-heal-release",
     tags: ["Healing", "Recursion", "Framework"],

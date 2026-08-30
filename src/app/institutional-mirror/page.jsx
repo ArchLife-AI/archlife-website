@@ -307,6 +307,59 @@ export default function InstitutionalMirrorPage() {
         <section
           style={{
             ...sectionStyle,
+            borderTop: "1px solid rgba(200,139,90,0.08)",
+          }}
+        >
+          <Reveal>
+            <SectionLabel>Questions</SectionLabel>
+          </Reveal>
+          <Reveal delay={60}>
+            <h2
+              style={{
+                ...titleText,
+                fontSize: "clamp(2.25rem, 4.8vw, 4rem)",
+                lineHeight: 1.1,
+                margin: "2rem 0 0.5rem",
+                maxWidth: 620,
+              }}
+            >
+              What this is, and is not.
+            </h2>
+          </Reveal>
+          {[
+            {
+              label: "What it is",
+              detail:
+                "A governance simulator for clinical AI. You walk synthetic scenarios to see how strain, trust, escalation, and oversight interact before those costs look normal.",
+            },
+            {
+              label: "What it is not",
+              detail:
+                "Not clinical decision support. Not a live hospital monitor. Not a staff, department, or hospital performance score.",
+            },
+            {
+              label: "Whose data",
+              detail:
+                "Synthetic scenario data only. No patient records. No live hospital telemetry.",
+            },
+            {
+              label: "Who it is for",
+              detail:
+                "Clinical AI leaders, hospital operations teams, and governance partners who need the trade-offs visible before deployment.",
+            },
+          ].map((item, index) => (
+            <Row
+              key={item.label}
+              label={item.label}
+              detail={item.detail}
+              index={index}
+            />
+          ))}
+        </section>
+
+        <section
+          style={{
+            ...sectionStyle,
             paddingBottom: "clamp(7rem, 13vw, 11rem)",
           }}
         >
@@ -317,7 +370,7 @@ export default function InstitutionalMirrorPage() {
             <div className="mirror-next-step">
               <h2>Begin with a scenario. Then bring the real question.</h2>
               <p>
-                Explore the prototype independently, or start a conversation about
+                Open the live prototype independently, or start a conversation about
                 the governance question your institution needs to make visible.
               </p>
               <div className="mirror-actions">
@@ -327,7 +380,7 @@ export default function InstitutionalMirrorPage() {
                   rel="noopener noreferrer"
                   className="mirror-primary-action"
                 >
-                  Explore Institutional Mirror
+                  Open the live prototype
                 </a>
                 <a href="/contact" className="mirror-secondary-action">
                   Contact ArchLife

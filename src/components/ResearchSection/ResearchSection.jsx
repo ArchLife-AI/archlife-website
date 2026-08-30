@@ -61,10 +61,10 @@ export function ResearchSection() {
             letterSpacing: "-0.01em",
           }}
         >
-          Ideas existing
+          Notes from
           <br />
           <em style={{ color: "#C88B5A", fontStyle: "italic" }}>
-            within systems
+            inside the system
           </em>
         </h2>
       </Reveal>

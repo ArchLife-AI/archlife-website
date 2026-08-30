@@ -36,9 +36,9 @@ export function AboutSection() {
                 marginBottom: "2rem",
               }}
             >
-              An intellectual
+              Who built this,
               <br />
-              systems origin story
+              and from where.
             </h2>
           </Reveal>
           <Reveal delay={180}>
@@ -52,7 +52,7 @@ export function AboutSection() {
               {[
                 {
                   n: "01 — Clinical Reality",
-                  t: "Observing healthcare fragmentation from the inside — not as a statistic. As the daily operational reality of 700+ clinics / 1,650+ doctors, and the invisible toll of disconnected systems on the people trying to hold them together.",
+                  t: "Observing healthcare fragmentation from the inside — not as a statistic. As the daily operational reality at Clove Dental, at the published scale of 700+ clinics / 1,650+ doctors, and the invisible toll of disconnected systems on the people trying to hold them together.",
                 },
                 {
                   n: "02 — Systems Awareness",
@@ -167,6 +167,19 @@ export function AboutSection() {
               }}
             >
               PGP, Applied AI and Agentic Systems, Masters&apos; Union (from August 2026)
+            </div>
+            <div
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.6rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                color: "rgba(155,94,69,0.5)",
+                marginBottom: "0.9rem",
+                lineHeight: 1.6,
+              }}
+            >
+              Public work of SolaEiMara ArchLife Pvt Ltd
             </div>
             <a
               href="https://www.linkedin.com/in/dr-ishaan-wadhwa-98a017244"

@@ -45,7 +45,7 @@ const project = {
   nextTitle: "The hall is open to invited pilots.",
   nextBody:
     "The live experience is the best introduction. MANthan is currently in an invited pilot with Masters' Union students. For institutional pilots or research conversations about the work, contact ArchLife directly.",
-  nextLiveAction: "Open MANthan",
+  nextLiveAction: "Enter the hall",
 };
 
 export const meta = () => [

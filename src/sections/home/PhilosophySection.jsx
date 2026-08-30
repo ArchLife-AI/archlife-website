@@ -37,10 +37,10 @@ export function PhilosophySection() {
               letterSpacing: "-0.01em",
             }}
           >
-            Calm systems
+            Intelligence that
             <br />
             <em style={{ color: "var(--gold)", fontStyle: "italic" }}>
-              intelligence.
+              stays calm under strain.
             </em>
           </h2>
         </Reveal>

@@ -221,6 +221,25 @@ export function HealthcareSection() {
                 }}
               >
                 <a
+                  href="/institutional-mirror"
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "0.68rem",
+                    letterSpacing: "0.12em",
+                    color: "rgba(156,163,175,0.45)",
+                    textDecoration: "none",
+                    transition: "color 0.35s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "rgba(200,139,90,0.8)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "rgba(156,163,175,0.45)")
+                  }
+                >
+                  Explore Institutional Mirror
+                </a>
+                <a
                   href="https://mirror.archlife.in"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -239,7 +258,7 @@ export function HealthcareSection() {
                     (e.currentTarget.style.color = "rgba(156,163,175,0.45)")
                   }
                 >
-                  mirror.archlife.in
+                  Open the live prototype
                 </a>
                 <span
                   style={{

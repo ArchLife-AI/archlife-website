@@ -5,7 +5,7 @@ export function DentalSection() {
   const threads = [
     {
       n: "Coordination at Scale",
-      d: "Mapping how clinical intent travels — and fractures — across 700+ clinics / 1,650+ doctors operating within a single institutional ecosystem.",
+      d: "Mapping how clinical intent travels — and fractures — across Clove Dental's published scale of 700+ clinics / 1,650+ doctors operating within a single institutional ecosystem.",
     },
     {
       n: "Operational Data Research",

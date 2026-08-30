@@ -280,9 +280,9 @@ const CONCEPT = {
   },
   governanceDrift: {
     definition:
-      "The gradual mutation of institutional behavior under sustained pressure.",
+      "The gradual mutation of institutional behaviour under sustained pressure.",
     whyItMatters:
-      "Institutions rarely change their stated principles — they change their operational behavior. Governance drift is the slow divergence between what an institution says it does and what it actually does. By the time the gap becomes visible, the drift is structural.",
+      "Institutions rarely change their stated principles — they change their operational behaviour. Governance drift is the slow divergence between what an institution says it does and what it actually does. By the time the gap becomes visible, the drift is structural.",
     failureModes: [
       "Mission statements outpacing operational reality",
       "Exceptions becoming rules through repetition",
@@ -307,11 +307,11 @@ const CONCEPT = {
     definition:
       "The gradual shift from human-supervised assistance to unexamined system dependence — where automated outputs, recommendations, or actions become normalized faster than institutional oversight can adapt.",
     whyItMatters:
-      "Healthcare AI does not only fail when models hallucinate. It fails when humans begin trusting fluent automation because it is fast, convenient, and embedded into workflow. Over time, staff stop checking, escalation weakens, and automated behavior becomes institutional habit. The most dangerous AI failures may not happen when humans reject automation — but when they adapt to it too easily.",
+      "Healthcare AI does not only fail when models hallucinate. It fails when humans begin trusting fluent automation because it is fast, convenient, and embedded into workflow. Over time, staff stop checking, escalation weakens, and automated behaviour becomes institutional habit. The most dangerous AI failures may not happen when humans reject automation — but when they adapt to it too easily.",
     failureModes: [
       "Verification rituals quietly abandoned as automation becomes routine",
       "Escalation thresholds rising silently as alerts get normalized",
-      "Automated behavior becoming the institutional default before policy catches up",
+      "Automated behaviour becoming the institutional default before policy catches up",
     ],
     operational: [
       "Clinical decision support outputs accepted without case-level review",
@@ -357,7 +357,7 @@ const CONCEPT = {
   },
   institutionalMemory: {
     definition:
-      "The persistence of historical patterns shaping future institutional behavior.",
+      "The persistence of historical patterns shaping future institutional behaviour.",
     whyItMatters:
       "Institutions remember whether they intend to or not. Procedures, norms, cultural sediment — these are memory artifacts. The question is whether the institution's memory is legible to itself, or whether it operates as inheritance the institution can no longer read.",
     failureModes: [
@@ -514,7 +514,7 @@ const PUBLIC_NOTES = [
   {
     title: "Notice, Hold, Heal, Release",
     blurb:
-      "A systems heuristic for operational intelligence that honors the recursive, nonlinear nature of integration in humans and institutions alike.",
+      "A systems heuristic for operational intelligence that honours the recursive, nonlinear nature of integration in humans and institutions alike.",
     readTime: "2 min",
     href: "/articles/notice-hold-heal-release",
     concepts: ["reflection", "humanState", "continuity"],

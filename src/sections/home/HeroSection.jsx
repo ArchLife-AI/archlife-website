@@ -61,13 +61,29 @@ export function HeroSection() {
             lineHeight: 1.95,
             color: "rgba(156,163,175,0.85)",
             maxWidth: 560,
-            marginBottom: "3.8rem",
+            marginBottom: "1.6rem",
             fontWeight: 300,
           }}
         >
           ArchLife combines practical operating work with prototypes and
           research to help institutions recognise strain, make trade-offs
-          visible, and govern AI with more care.
+          visible, and govern AI with more care. Start with the prototype, the
+          lab engagement, or the writing.
+        </p>
+      </Reveal>
+
+      <Reveal delay={180}>
+        <p
+          style={{
+            fontFamily: "var(--sans)",
+            fontSize: "0.68rem",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "rgba(156,163,175,0.45)",
+            marginBottom: "2.4rem",
+          }}
+        >
+          Founded by Dr. Ishaan Wadhwa
         </p>
       </Reveal>
 
@@ -81,9 +97,7 @@ export function HeroSection() {
           }}
         >
           <a
-            href="https://mirror.archlife.in"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/institutional-mirror"
             style={{
               fontFamily: "var(--sans)",
               fontSize: "0.7rem",
@@ -132,7 +146,32 @@ export function HeroSection() {
               e.currentTarget.style.borderColor = "rgba(156,163,175,0.12)";
             }}
           >
-            For Dental Labs
+            View the lab engagement
+          </a>
+          <a
+            href="/articles"
+            style={{
+              fontFamily: "var(--sans)",
+              fontSize: "0.7rem",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "rgba(156,163,175,0.6)",
+              border: "1px solid rgba(156,163,175,0.12)",
+              padding: "0.9rem 2rem",
+              textDecoration: "none",
+              transition: "all 0.4s ease",
+              display: "inline-block",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "var(--ink)";
+              e.currentTarget.style.borderColor = "rgba(156,163,175,0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "rgba(156,163,175,0.6)";
+              e.currentTarget.style.borderColor = "rgba(156,163,175,0.12)";
+            }}
+          >
+            Read the writing
           </a>
         </div>
       </Reveal>

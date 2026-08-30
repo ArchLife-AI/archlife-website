@@ -127,13 +127,16 @@ describe('navigation links', () => {
     expect(document.body.textContent).not.toMatch(/CIN:\s*pending/i);
   });
 
-  it('exposes Privacy and Terms in the sitewide footer', () => {
+  it('exposes Privacy, Terms, and Book in the sitewide footer', () => {
     render(<Footer />);
     expect(screen.getByRole('link', { name: /^Privacy$/ }).getAttribute('href')).toBe(
       '/privacy'
     );
     expect(screen.getByRole('link', { name: /^Terms$/ }).getAttribute('href')).toBe(
       '/terms'
+    );
+    expect(screen.getByRole('link', { name: /^Book$/ }).getAttribute('href')).toBe(
+      '/book'
     );
   });
 });

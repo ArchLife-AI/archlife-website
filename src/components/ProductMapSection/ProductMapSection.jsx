@@ -8,9 +8,8 @@ const offerings = [
     category: "Governance simulator",
     description:
       "A systemic stress-test environment for clinical AI systems, built to make strain, trust, and governance trade-offs visible through synthetic scenarios.",
-    href: "https://mirror.archlife.in",
-    action: "Explore the prototype",
-    external: true,
+    href: "/institutional-mirror",
+    action: "Explore Institutional Mirror",
   },
   {
     title: "Dental Lab Operating Layer",
@@ -37,7 +36,7 @@ const offerings = [
     description:
       "A spatial music experience for self-directed reflection, where movement and listening become a gentler way to explore an inner state.",
     href: "/sensorium",
-    action: "Explore the project",
+    action: "Explore The Sensorium",
   },
   {
     title: "MANthan",
@@ -46,12 +45,12 @@ const offerings = [
     description:
       "Living therapy sessions in the Sensorium's central hall — the interactive experience of The Builder and The Architect.",
     href: "/manthan",
-    action: "Open MANthan",
+    action: "Explore MANthan",
   },
 ];
 
 const routes = [
-  { label: "Healthcare AI governance", href: "https://mirror.archlife.in", external: true },
+  { label: "Healthcare AI governance", href: "/institutional-mirror" },
   { label: "Dental lab operations", href: "/dental-labs" },
   { label: "Intentional listening", href: "/sensorium" },
   { label: "Living therapy", href: "/manthan" },

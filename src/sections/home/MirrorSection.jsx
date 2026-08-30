@@ -82,9 +82,7 @@ export function MirrorSection() {
 
           <Reveal delay={200}>
             <a
-              href="https://mirror.archlife.in"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/institutional-mirror"
               style={{
                 fontFamily: "var(--sans)",
                 fontSize: "0.68rem",
@@ -108,7 +106,7 @@ export function MirrorSection() {
                   "rgba(156,163,175,0.15)";
               }}
             >
-              Open Institutional Mirror
+              Explore Institutional Mirror
             </a>
           </Reveal>
         </div>

@@ -1,6 +1,7 @@
 const footerLinks = [
   { label: "Articles", href: "/articles" },
   { label: "Canon", href: "/canon" },
+  { label: "Book", href: "/book" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },

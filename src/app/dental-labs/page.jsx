@@ -557,9 +557,9 @@ export default function DentalLabsPage() {
                 <p style={{ ...bodyText, maxWidth: 600 }}>
                   A lightweight, mobile-first job tracking layer for Indian
                   dental lab reality. It should work with WhatsApp-native
-                  behavior, not fight it. It should give the lab manager and
+                  behaviour, not fight it. It should give the lab manager and
                   dentist clients real-time visibility without forcing a Western
-                  enterprise LMS onto the floor.
+                  enterprise LMS (learning management system) onto the floor.
                 </p>
               </div>
             </Reveal>

@@ -45,7 +45,7 @@ const project = {
   nextTitle: "Enter when you have a little time to wander.",
   nextBody:
     "The live walk is the best introduction. For research, design, or product conversations around intentional listening, contact ArchLife directly.",
-  nextLiveAction: "Open The Sensorium",
+  nextLiveAction: "Enter the live walk",
 };
 
 export const meta = () => [

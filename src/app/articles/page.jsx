@@ -151,7 +151,15 @@ export default function ArticlesPage() {
             Published by Dr. Ishaan Wadhwa, Healthcare Vertical Lead, AI
             Collective Delhi. The full working analysis — the six-layer audit
             against thirteen global frameworks — is available to collaborators
-            on request.
+            on request. There is no newsletter form on this site. If you want
+            the Four Gaps working analysis, write to{" "}
+            <a
+              href="mailto:hello@archlife.in?subject=Four%20Gaps"
+              style={{ color: "rgba(200,139,90,0.85)", textDecoration: "none" }}
+            >
+              hello@archlife.in
+            </a>{" "}
+            with the subject Four Gaps.
           </p>
         </Reveal>
       </section>

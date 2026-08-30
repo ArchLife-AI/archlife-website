@@ -355,7 +355,7 @@ export default function BookPage() {
         </Reveal>
         <Reveal delay={380}>
           <P>
-            It observes. It organizes. It asks what can endure. It turns
+            It observes. It organises. It asks what can endure. It turns
             experience into language, memory, rhythm, and form.
           </P>
         </Reveal>
@@ -457,7 +457,7 @@ export default function BookPage() {
               n: "03",
               name: "Heal",
               detail:
-                "To allow pain, confusion, or fragmentation to reorganize into pattern, meaning, and coherence.",
+                "To allow pain, confusion, or fragmentation to reorganise into pattern, meaning, and coherence.",
             },
             {
               n: "04",
@@ -810,7 +810,7 @@ export default function BookPage() {
         <Reveal delay={500}>
           <P>
             A reflection on how pain, memory, identity, care, and intelligence
-            might be reorganized into systems that do not abandon the human being
+            might be reorganised into systems that do not abandon the human being
             at their center. It is not a claim that machines can heal us. It is
             a question about whether the systems we build can stop deepening
             the fractures they were meant to solve.
