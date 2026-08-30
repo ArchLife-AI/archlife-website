@@ -15,7 +15,7 @@ export function FooterNavRow() {
       {[
         { label: "Articles", href: "/articles" },
         { label: "Canon", href: "/canon" },
-        { label: "Institutional Mirror", href: "https://mirror.archlife.in", external: true },
+        { label: "Institutional Mirror", href: "/institutional-mirror" },
         { label: "Dental Labs", href: "/dental-labs" },
         { label: "MedEvolv", href: "/medevolv" },
         { label: "Contact", href: "/contact" },
